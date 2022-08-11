@@ -1,0 +1,84 @@
+/* Temporary CSS */
+.jhd-bg-orange {background-color: #f0592a;}
+.jhd-bg-pink {background-color: #ffc0cb;}
+.jhd-bg-green {background-color: #8fbc8f;}
+
+/* Text */
+.kvanar-orange-text {
+    color: #f0592a;
+}
+.kvanar-text-xxl {font-size: 70px;}
+
+/* Height */
+.full-vh {
+    height: 100vh;
+}
+
+/* Carousel Style */
+#carouselExampleCaptions,
+.carousel-inner,
+.carousel-item,
+.carousel-item.active,
+.carousel-h-100 {
+    height: 100vh;
+}
+.carousel-item {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.carousel-vh-spacer {
+    height: 10vh;
+}
+
+/* Swiper */
+.swiper {
+    height: inherit;
+}
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.swiper-slide-active{
+    transform: scale(1);
+}
+.swiper-button-prev,
+.swiper-button-next {
+    color: #D3D3D3FF;
+}
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #f0592a;
+}
+.swiper-pagination-bullet {
+    background-color: white;
+}
+.swiper-pagination-bullet-active {
+    background-color: #f0592a;
+}
+
+
+.image-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Zoom Effect */
+.zoom-effect {
+    animation-name: kvanar-shrink-animation;
+    animation-duration: 6s;
+    background-size: auto 150%;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+@keyframes kvanar-shrink-animation {
+    0% {
+        background-size: auto 150%;
+    }
+    100% {
+        background-size: auto 140%;
+    }
+}
