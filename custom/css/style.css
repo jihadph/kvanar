@@ -3,16 +3,36 @@
 .jhd-bg-pink {background-color: #ffc0cb;}
 .jhd-bg-green {background-color: #8fbc8f;}
 
-/* Text */
-.kvanar-orange-text {
-    color: #f0592a;
+/* Kvanar Brand Color */
+.kvanar-text-gray {color: #545454;}
+.kvanar-text-orange {color: #f0592a;}
+.kvanar-bg-gray {
+    background-color: #545454;
+    color: #a6a6a6;
 }
+.kvanar-bg-gray-dotted {
+    background: radial-gradient(circle at center, #666666 10%, transparent 12%), #545454;
+    background-size: 25px 25px;
+    color: #a6a6a6;
+}
+.kvanar-bg-orange {
+    background-color: #f0592a;
+}
+.kvanar-bg-orange-light {
+    background-color: #fe6600;
+}
+
+
+
+/* Text */
 .kvanar-text-xxl {font-size: 70px;}
 
 /* Height */
-.full-vh {
-    height: 100vh;
-}
+.full-vh {height: 100vh;}
+.half-vh {height: 50vh;}
+.vh-25 {height: 25vh!important;}
+.vh-50 {height: 50vh!important;}
+.vh-75 {height: 75vh!important;}
 
 /* Carousel Style */
 #carouselExampleCaptions,
@@ -81,4 +101,30 @@
     100% {
         background-size: auto 140%;
     }
+}
+
+/* Accordion Hover */
+.kvanar-accordion-small {
+    display: block;
+}
+.kvanar-accordion-big {
+    display: none;
+}
+@media (min-width: 992px) {
+    .kvanar-accordion-small {
+        display: none;
+    }
+    .kvanar-accordion-big {
+        display: block;
+    }
+}
+.kvanar-service-panel:hover {
+    background-color: #f2f2f2;
+}
+.kvanar-accordion-content {
+    position: absolute;
+    display: none;
+    margin-top: -150px;
+    margin-right: 100px;
+    margin-left: 70px;
 }
