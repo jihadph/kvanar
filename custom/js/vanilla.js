@@ -31,35 +31,37 @@ $('document').ready(function () {
     });
 
     /* SWIPER-SECOND */
-    const swiper_second = new Swiper('.swiper-second', {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: true,
+    const swiper = new Swiper(".mySwiper", {
+        slidesPerView: 'auto',
+        effect: 'slide',
+        grabCursor: true,
+        speed: 1000,
+        preloadImages: true,
+        simulateTouch: true,
+        updateOnWindowResize: true,
+        spaceBetween: 20,
+
+        // If we need pagination
         pagination: {
-            el: '.swiper-pagination',
+            el: ".swiper-pagination",
             clickable: true,
         },
-    });
-    $('.slider-for').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        fade: true,
-        asNavFor: '.slider-nav'
-    });
 
-    $('.slider-nav').slick({
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        asNavFor: '.slider-for',
-        dots: true,
-        centerMode: true,
-        focusOnSelect: true
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        autoplay: {
+            delay: 4000,
+        },
     });
 
     /* AOS */
     AOS.init();
 
+    /* SERVICE NAVIGATION */
     $('.kvanar-service-panel').on('mouseover', function (){
         let $id = $(this).attr('id');
         $('#block-'+$id).fadeIn();
@@ -67,6 +69,37 @@ $('document').ready(function () {
 
     $('.kvanar-service-panel').on('mouseout', function (){
         $('.kvanar-accordion-content').fadeOut();
+    });
+
+    $('.kvanar-accordion-content').hide();
+    $('.abc').show();
+
+
+    /* LOGO UPDATE ON SCROLL */
+    $(function() {
+        const logo = $("#headerLogo");
+        $(window).scroll(function() {
+            const scroll = $(window).scrollTop();
+            const vh = $("#frontScreen").height();
+
+            if (scroll >= vh) {
+                if(!logo.hasClass("dark-logo")) {
+                    logo.hide();
+                    logo.removeClass('white-logo')
+                        .addClass("dark-logo")
+                        .attr('src', '/custom/img/logo-kvanar-db-ronshaw.png')
+                        .fadeIn( "slow");
+                }
+            } else {
+                if(!logo.hasClass("white-logo")) {
+                    logo.hide();
+                    logo.removeClass("dark-logo")
+                        .addClass('white-logo')
+                        .attr('src', '/custom/img/logo-kvanar-db-ronshaw-white.png')
+                        .fadeIn( "slow");
+                }
+            }
+        });
     });
 
 });

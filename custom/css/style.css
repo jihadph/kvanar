@@ -4,11 +4,15 @@
 .jhd-bg-green {background-color: #8fbc8f;}
 
 /* Kvanar Brand Color */
+.kvanar-text-white {color: #FFFFFF;}
 .kvanar-text-gray {color: #545454;}
 .kvanar-text-orange {color: #f0592a;}
 .kvanar-bg-gray {
     background-color: #545454;
     color: #a6a6a6;
+}
+.kvanar-bg-white {
+    background-color: #FFFFFF;
 }
 .kvanar-red {color: #ff0000;}
 .kvanar-bg-gray-dotted {
@@ -27,6 +31,9 @@
 
 /* Text */
 .kvanar-text-xxl {font-size: 70px;}
+.kvanar-section-label {
+    font-family: 'Merriweather', sans-serif;
+}
 
 /* Height */
 .full-vh {min-height: 100vh;}
@@ -124,7 +131,6 @@
 }
 .kvanar-accordion-content {
     position: absolute;
-    display: none;
     margin-top: -150px;
     margin-right: 100px;
     margin-left: 70px;
@@ -132,10 +138,10 @@
 
 /* DIVIDERS */
 .kvanar-divider {
-    border-bottom: 4px solid #f0592a;
+    border-bottom: 2px solid #f0592a;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    width: 7rem;
+    width: 15rem;
 }
 .kvanar-divider-wave {
     --c:#f0592a;   /* Color */
@@ -153,6 +159,7 @@
     width:240px;
     height:7px;
 }
+
 /* TEXT-HIGHLIGHT */
 .text-highlight {
     position: relative;
@@ -199,4 +206,76 @@
     60% { content: "holidays";}
     80% { content: "celebrations"; }
     100% { content: "memories"; }
+}
+
+/* SWIPER - KVANAR PROJECTS */
+.swiper-projects {
+    width: 100%;
+    height: 360px!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.swiper-projects .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-projects .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.swiper-projects .swiper-slide {
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+}
+
+@media (min-width: 992px) {
+    .swiper-projects .swiper-slide {
+        width: 45%;
+    }
+}
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.kvanar-fixed-image {
+    background: url('/custom/img/kvanar-team-dark.jpg') no-repeat fixed center center ;
+    background-size: cover;
+}
+
+
+.kvanar-button-orange {
+    background-color: #f0592a;
+    color: #FFFFFF;
+    padding: 5px 50px;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+.kvanar-button-orange:hover {
+    background-color: #FFFFFF;
+    color: #f0592a;
+    font-size: 1.5em;
+    line-height: 1.5em;
 }
