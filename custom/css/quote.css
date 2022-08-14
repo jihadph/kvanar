@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200italic);
+blockquote {margin-bottom: 0;}
 .quote-card {
     background: #fff;
     color: #222222;
@@ -16,20 +17,21 @@
     max-width: 80%;
 }
 .quote-card cite {
-    font-size: 16px;
     margin-top: 10px;
-    display: block;
-    font-weight: 200;
-    opacity: 0.8;
+    opacity: 0.5;
+}
+.quote-card cite:before {
+    content:"— "
 }
 .quote-card:before {
     font-family: Georgia, serif;
     content: "“";
     position: absolute;
-    top: 10px;
+    top: 0;
     left: 10px;
     font-size: 5em;
-    color: rgba(238, 238, 238, 0.8);
+    color: #545454;
+    opacity: 0.35;
     font-weight: normal;
 }
 .quote-card:after {
@@ -40,7 +42,8 @@
     line-height: 100px;
     right: -15px;
     font-size: 25em;
-    color: rgba(238, 238, 238, 0.8);
+    color: #545454;
+    opacity: 0.35;
     font-weight: normal;
 }
 @media (max-width: 640px) {
