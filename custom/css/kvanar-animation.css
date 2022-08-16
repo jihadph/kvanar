@@ -1,0 +1,11 @@
+/* j-animate.css */
+
+/* Fade Animation */
+.j-animate-fade-border {
+    transition: all 0.5s ease-out;
+}
+.j-animate-fade-border:hover {
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    box-shadow:0 .5rem 1rem #f0592a !important;
+}

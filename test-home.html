@@ -38,6 +38,7 @@
     <!-- Custom CSS -->
     <link href="/custom/css/style.css" rel="stylesheet">
     <link href="/custom/css/quote.css" rel="stylesheet">
+    <link href="/custom/css/kvanar-animation.css" rel="stylesheet">
 
     <!-- Custom JS -->
     <script src="/custom/js/jQuery-3.6.0.min.js"></script>
@@ -136,7 +137,7 @@
 </div>
 
 <!-- SECTION 3 -->
-<div class="container-fluid p-3 p-sm-5">
+<div class="container-fluid p-4 p-sm-5 mb-5">
     <div class="row align-items-center kvanar-bg-orange-light rounded-4">
         <div class="col-lg-6 col-12">
             <div class="row align-items-center">
@@ -147,10 +148,10 @@
             </div>
         </div>
         <div class="col-lg-6 col-12 text-white" data-aos="fade-right" data-aos-duration="1000">
-            <div class="row half-vh align-items-center">
-                <div class="col-md-10 m-auto display-2">
+            <div class="row align-items-center">
+                <div class="col-md-10 p-md-0 p-5 m-auto display-2">
                     Great
-                    <span class="kvanar-text-roll display-2 text-decoration-underline"></span>
+                    <span class="kvanar-text-roll display-3"></span>
                     <br />begin with great homes.
                 </div>
             </div>
@@ -158,169 +159,150 @@
     </div>
 </div>
 
-<!-- SECTION 4.1 FOR SMALLER SCREEN-->
-<div class="container-fluid kvanar-accordion-small pb-5">
-    <div class="row full-vh pb-5">
-
-        <!-- Accordion -->
-        <div class="col-12 col-md-10 m-auto pb-5">
-
-            <!-- Services Title -->
-            <div class="row pt-5 pb-5">
-                <div class="col-12 display-2 fw-bold text-center pt-5 kvanar-section-label" data-aos="fade-up" data-aos-duration="1300">What We Offer</div>
-            </div>
-
-            <div class="accordion" id="accordionExample">
-
-                <div class="accordion-item" data-aos="fade-up" data-aos-duration="1300">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            <span class="display-5">Design & Build</span>
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <p class="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
+<!-- SECTION 4A - BIG SCREEN -->
+<div class="container-fluid p-5 mb-5 kvanar-services-big-screen">
+    <div class="row">
+        <div class="col-12 col-md-6 ps-5 pe-5" data-aos="fade-left" data-aos-duration="1000">
+            <div class="row mt-3">
+                <div class="col-6 mb-4">
+                    <div id="service1" class="p-3 rounded-3 text-center card-services j-animate-fade-border">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 h5">Design & Build</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item" data-aos="fade-up" data-aos-duration="1300">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            <span class="display-5">General Contractors</span>
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                        <div class="accordion-body display-6">
-                            <p class="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
+                <div class="col-6 mb-4">
+                    <div id="service2" class="p-3 rounded-3 text-center card-services j-animate-fade-border">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 h5">General Contractors</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item" data-aos="fade-up" data-aos-duration="1300">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            <span class="display-5">Project & Construction Management</span>
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                        <div class="accordion-body display-6">
-                            <p class="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
+                <div class="col-6 mb-4">
+                    <div id="service3" class="p-3 rounded-3 text-center card-services j-animate-fade-border">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 h5">Project & Construction Managemen</div>
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item" data-aos="fade-up" data-aos-duration="1300">
-                    <h2 class="accordion-header" id="headingFour">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                            <span class="display-5">Refurbishment & Renovation</span>
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-                        <div class="accordion-body display-6">
-                            <p class="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
+                <div class="col-6 mb-4">
+                    <div id="service4" class="p-3 rounded-3 text-center card-services j-animate-fade-border">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 h5">Refurbishment & Renovation</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item" data-aos="fade-up" data-aos-duration="1300">
-                    <h2 class="accordion-header" id="headingFive">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                            <span class="display-5">Heavy Equipment Hire</span>
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
-                        <div class="accordion-body display-6">
-                            <p class="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
+                <div class="col-6 mb-4">
+                    <div id="service5" class="p-3 rounded-3 text-center card-services j-animate-fade-border">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 h5">Heavy Equipment Hire</div>
                         </div>
                     </div>
                 </div>
-
-                <div class="accordion-item" data-aos="fade-up" data-aos-duration="1300">
-                    <h2 class="accordion-header" id="headingSix">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-                            <span class="display-5">Importing & Shipping of Personal Effects</span>
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
-                        <div class="accordion-body display-6">
-                            <p class="lead">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            </p>
+                <div class="col-6 mb-4">
+                    <div id="service6" class="p-3 rounded-3 text-center card-services j-animate-fade-border">
+                        <div class="row h-100 align-items-center">
+                            <div class="col-12 h5">Importing & Shipping of Personal Effects</div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
-
+        <div class="col-12 col-md-6 ps-5 pe-5 pt-3 pb-3">
+            <div class="display-6 mb-4 p-2 kvanar-section-label" data-aos="fade-down" data-aos-duration="1000">Our Services</div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+                <div id="item-service1" class="pt-3 p-2 card-services-description">
+                    <h4 class="mb-4 kvanar-text-orange">Design & Build</h4>
+                    <p class="fs-5">Design & Build. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                        and procedures and the rules of common sense. We recognize that the protection of our employees,
+                        property, the public and the environment are essential to the efficient and successful completion
+                        of every construction project we undertake.</p>
+                </div>
+                <div id="item-service2" class="pt-3 p-2 card-services-description">
+                    <h4 class="mb-4 kvanar-text-orange">General Contractors</h4>
+                    <p class="fs-5">General Contractors. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                        and procedures and the rules of common sense. We recognize that the protection of our employees,
+                        property, the public and the environment are essential to the efficient and successful completion
+                        of every construction project we undertake.</p>
+                </div>
+                <div id="item-service3" class="pt-3 p-2 card-services-description">
+                    <h4 class="mb-4 kvanar-text-orange">Project & Construction Managemen</h4>
+                    <p class="fs-5">Project & Construction Managemen. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                        and procedures and the rules of common sense. We recognize that the protection of our employees,
+                        property, the public and the environment are essential to the efficient and successful completion
+                        of every construction project we undertake.</p>
+                </div>
+                <div id="item-service4" class="pt-3 p-2 card-services-description">
+                    <h4 class="mb-4 kvanar-text-orange">Refurbishment & Renovation</h4>
+                    <p class="fs-5">Refurbishment & Renovation. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                        and procedures and the rules of common sense. We recognize that the protection of our employees,
+                        property, the public and the environment are essential to the efficient and successful completion
+                        of every construction project we undertake.</p>
+                </div>
+                <div id="item-service5" class="pt-3 p-2 card-services-description">
+                    <h4 class="mb-4 kvanar-text-orange">Heavy Equipment Hire</h4>
+                    <p class="fs-5">Heavy Equipment Hire. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                        and procedures and the rules of common sense. We recognize that the protection of our employees,
+                        property, the public and the environment are essential to the efficient and successful completion
+                        of every construction project we undertake.</p>
+                </div>
+                <div id="item-service6" class="pt-3 p-2 card-services-description">
+                    <h4 class="mb-4 kvanar-text-orange">Importing & Shipping of Personal Effects</h4>
+                    <p class="fs-5">Importing & Shipping of Personal Effects. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                        and procedures and the rules of common sense. We recognize that the protection of our employees,
+                        property, the public and the environment are essential to the efficient and successful completion
+                        of every construction project we undertake.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
-<!-- SECTION 4.2 FOR BIGGER SCREEN -->
-<div class="container-fluid kvanar-accordion-big kvanar-text-gray">
-    <div class="container pt-5">
-        <!-- Services Title -->
-        <div class="row pt-5">
-            <div class="col-12 display-2 fw-bold text-center pt-5 kvanar-section-label" data-aos="fade-up" data-aos-duration="1300">What We Offer</div>
+<!-- SECTION 4B - SMALL SCREEN -->
+<div class="container-fluid p-4 p-sm-5 mb-5 kvanar-services-small-screen">
+    <div class="row">
+        <div class="display-6 mb-4 p-2 kvanar-section-label" data-aos="fade-down" data-aos-duration="1000">Our Services</div>
+        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5 mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="mb-4 kvanar-text-orange">Design & Build</h4>
+            <p class="fs-5 mb-0">Design & Build. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                and procedures and the rules of common sense. We recognize that the protection of our employees,
+                property, the public and the environment are essential to the efficient and successful completion
+                of every construction project we undertake.</p>
         </div>
-        <div class="row full-vh align-items-center">
-            <div class="col-6 display-6 d-grid gap-3">
-                <div class="kvanar-service-panel border-bottom p-2 kvanar-text-orange" id="kvanar-service-1" data-aos="fade-right" data-aos-duration="1300">
-                    Design & Build
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </div>
-                <div class="kvanar-service-panel border-bottom p-2" id="kvanar-service-2" data-aos="fade-right" data-aos-duration="1300">
-                    General Contractors
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </div>
-                <div class="kvanar-service-panel border-bottom p-2" id="kvanar-service-3" data-aos="fade-right" data-aos-duration="1300">
-                    Project & Construction Management
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </div>
-                <div class="kvanar-service-panel border-bottom p-2" id="kvanar-service-4" data-aos="fade-right" data-aos-duration="1300">
-                    Refurbishment & Renovation
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </div>
-                <div class="kvanar-service-panel border-bottom p-2" id="kvanar-service-5" data-aos="fade-right" data-aos-duration="1300">
-                    Heavy Equipment Hire
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </div>
-                <div class="kvanar-service-panel border-bottom p-2" id="kvanar-service-6" data-aos="fade-right" data-aos-duration="1300">
-                    Importing & Shipping of Personal Effects
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                    </svg>
-                </div>
-            </div>
-            <div class="col-6">
-                <div class="kvanar-accordion-content abc" id="block-kvanar-service-1" style=""><div class="h3 mb-3 kvanar-text-orange">Design & Build</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </div>
-                <div class="kvanar-accordion-content" id="block-kvanar-service-2" style=""><div class="h3 mb-3 kvanar-text-orange">General Contractors</div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
-                <div class="kvanar-accordion-content" id="block-kvanar-service-3" style=""><div class="h3 mb-3 kvanar-text-orange">Project & Construction Management</div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                <div class="kvanar-accordion-content" id="block-kvanar-service-4" style=""><div class="h3 mb-3 kvanar-text-orange">Refurbishment & Renovation</div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                <div class="kvanar-accordion-content" id="block-kvanar-service-5" style=""><div class="h3 mb-3 kvanar-text-orange">Heavy Equipment Hire</div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-                <div class="kvanar-accordion-content" id="block-kvanar-service-6" style=""><div class="h3 mb-3 kvanar-text-orange">Importing & Shipping of Personal Effects</div>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</div>
-            </div>
+        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5  mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="mb-4 kvanar-text-orange">General Contractors</h4>
+            <p class="fs-5 mb-0">General Contractors. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                and procedures and the rules of common sense. We recognize that the protection of our employees,
+                property, the public and the environment are essential to the efficient and successful completion
+                of every construction project we undertake.</p>
+        </div>
+        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5  mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="mb-4 kvanar-text-orange">Project & Construction Managemen</h4>
+            <p class="fs-5 mb-0">Project & Construction Managemen. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                and procedures and the rules of common sense. We recognize that the protection of our employees,
+                property, the public and the environment are essential to the efficient and successful completion
+                of every construction project we undertake.</p>
+        </div>
+        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5  mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="mb-4 kvanar-text-orange">Refurbishment & Renovation</h4>
+            <p class="fs-5 mb-0">Refurbishment & Renovation. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                and procedures and the rules of common sense. We recognize that the protection of our employees,
+                property, the public and the environment are essential to the efficient and successful completion
+                of every construction project we undertake.</p>
+        </div>
+        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5  mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="mb-4 kvanar-text-orange">Heavy Equipment Hire</h4>
+            <p class="fs-5 mb-0">Heavy Equipment Hire. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                and procedures and the rules of common sense. We recognize that the protection of our employees,
+                property, the public and the environment are essential to the efficient and successful completion
+                of every construction project we undertake.</p>
+        </div>
+        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5  mb-5" data-aos="fade-up" data-aos-duration="1000">
+            <h4 class="mb-4 kvanar-text-orange">Importing & Shipping of Personal Effects</h4>
+            <p class="fs-5 mb-0">Importing & Shipping of Personal Effects. We strive to make our work environment as safe as possible, abiding by industry accepted practices
+                and procedures and the rules of common sense. We recognize that the protection of our employees,
+                property, the public and the environment are essential to the efficient and successful completion
+                of every construction project we undertake.</p>
         </div>
     </div>
 </div>

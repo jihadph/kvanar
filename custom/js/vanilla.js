@@ -52,10 +52,6 @@ $('document').ready(function () {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
-
-        autoplay: {
-            delay: 4000,
-        },
     });
 
     /* AOS */
@@ -100,6 +96,16 @@ $('document').ready(function () {
                 }
             }
         });
+    });
+
+    /* SERVICE NAVIGATION - Big Screen */
+    $("#item-service1").fadeIn('slow');
+    $(".card-services").on("click", function () {
+        let $id = $(this).attr('id');
+        $.when($('.card-services-description').fadeOut())
+            .done(function () {
+                $('#item-'+$id).fadeIn('slow')
+            });
     });
 
 });

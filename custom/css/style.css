@@ -111,31 +111,6 @@
     }
 }
 
-/* Accordion Hover */
-.kvanar-accordion-small {
-    display: block;
-}
-.kvanar-accordion-big {
-    display: none;
-}
-@media (min-width: 992px) {
-    .kvanar-accordion-small {
-        display: none;
-    }
-    .kvanar-accordion-big {
-        display: block;
-    }
-}
-.kvanar-service-panel:hover {
-    color: #f0592a;
-}
-.kvanar-accordion-content {
-    position: absolute;
-    margin-top: -150px;
-    margin-right: 100px;
-    margin-left: 70px;
-}
-
 /* DIVIDERS */
 .kvanar-divider {
     border-bottom: 2px solid #f0592a;
@@ -194,18 +169,42 @@
 
 /* CHANGE TEXT */
 .kvanar-text-roll {
+    font-family: "Merriweather", sans-serif;
 }
 .kvanar-text-roll:after {
     content:"";
-    animation: spin 5s ease-in infinite;
+    animation: spin 10s ease-in infinite;
 }
 @keyframes spin {
-    0% { content:"memories";}
-    20% { content:"vacations";}
-    40% { content:"events";}
-    60% { content: "holidays";}
-    80% { content: "celebrations"; }
-    100% { content: "memories"; }
+    0% { content:"memories"; opacity: 1; }
+    2% { content:"memories"; opacity: 1; }
+    13% { content:"memories"; opacity: 1; }
+    15% { content:"memories"; opacity: 0; }
+
+    16% { content:"vacations"; opacity: 0; }
+    17% { content:"vacations"; opacity: 1; }
+    28% { content:"vacations"; opacity: 1; }
+    30% { content:"vacations"; opacity: 0; }
+
+    31% { content:"events"; opacity: 0; }
+    32% { content:"events"; opacity: 1; }
+    43% { content:"events"; opacity: 1; }
+    45% { content:"events"; opacity: 0; }
+
+    46% { content:"holidays"; opacity: 0; }
+    47% { content:"holidays"; opacity: 1; }
+    58% { content:"holidays"; opacity: 1; }
+    60% { content:"holidays"; opacity: 0; }
+
+    61% { content:"celebrations"; opacity: 0; }
+    62% { content:"celebrations"; opacity: 1; }
+    73% { content:"celebrations"; opacity: 1; }
+    75% { content:"celebrations"; opacity: 0; }
+
+    76% { content:"memories"; opacity: 0; }
+    77% { content:"memories"; opacity: 1; }
+    88% { content:"memories"; opacity: 1; }
+    100% { content:"memories"; opacity: 1; }
 }
 
 /* SWIPER - KVANAR PROJECTS */
@@ -278,4 +277,40 @@
     color: #f0592a;
     font-size: 1.5em;
     line-height: 1.5em;
+}
+
+/* SECTION - OUR SERVICES - BIG */
+.card-services {
+    height: 110px;
+    border: 1px solid #f0592a;
+}
+.card-services-description {
+    display: none;
+}
+.kvanar-service-panel:hover {
+    color: #f0592a;
+}
+
+
+/* Accordion Hover */
+.kvanar-services-small-screen {
+    display: block;
+}
+.kvanar-services-big-screen {
+    display: none;
+}
+@media (min-width: 992px) {
+    .kvanar-services-small-screen {
+        display: none;
+    }
+    .kvanar-services-big-screen {
+        display: block;
+    }
+}
+
+.kvanar-accordion-content {
+    position: absolute;
+    margin-top: -150px;
+    margin-right: 100px;
+    margin-left: 70px;
 }
