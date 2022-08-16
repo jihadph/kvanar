@@ -100,11 +100,17 @@ $('document').ready(function () {
 
     /* SERVICE NAVIGATION - Big Screen */
     $("#item-service1").fadeIn('slow');
+    $("#service1").addClass('card-services-active');
     $(".card-services").on("click", function () {
         let $id = $(this).attr('id');
-        $.when($('.card-services-description').fadeOut())
+        let $all_services = $('.card-services-description');
+        $.when(
+            $all_services.fadeOut(),
+            $('.card-services').removeClass('card-services-active')
+            )
             .done(function () {
-                $('#item-'+$id).fadeIn('slow')
+                $('#item-'+$id).fadeIn('slow');
+                $('#'+$id).addClass('card-services-active')
             });
     });
 

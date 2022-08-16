@@ -282,13 +282,17 @@
 /* SECTION - OUR SERVICES - BIG */
 .card-services {
     height: 110px;
-    border: 1px solid #f0592a;
+    border: 1px solid #a6a6a6;
+}
+.card-services-active {
+    border: 1px solid #fe6600;
+    color: #fe6600;
 }
 .card-services-description {
     display: none;
 }
 .kvanar-service-panel:hover {
-    color: #f0592a;
+    color: #fe6600;
 }
 
 
