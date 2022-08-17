@@ -102,9 +102,14 @@
 .zoom-effect {
     animation-name: kvanar-shrink-animation;
     animation-duration: 6s;
+    background-size: auto 130%;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+    animation-direction: alter;
+}
+@keyframes kvanar-shrink-animation {
+    0%  {background-size: auto 150%;}
+    100% {background-size: auto 140%;}
 }
 
 /* DIVIDERS */
