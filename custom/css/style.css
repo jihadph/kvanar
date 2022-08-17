@@ -3,6 +3,12 @@
 .jhd-bg-pink {background-color: #ffc0cb;}
 .jhd-bg-green {background-color: #8fbc8f;}
 
+/* HEADER */
+.kvanar-header-white {
+    background-color: #FFFFFF;
+    border-bottom: 3px solid #f2f2f2;
+}
+
 /* Kvanar Brand Color */
 .kvanar-text-white {color: #FFFFFF;}
 .kvanar-text-gray {color: #545454;}
@@ -11,9 +17,7 @@
     background-color: #545454;
     color: #a6a6a6;
 }
-.kvanar-bg-white {
-    background-color: #FFFFFF;
-}
+.kvanar-bg-white {background-color: #FFFFFF;}
 .kvanar-red {color: #ff0000;}
 .kvanar-bg-gray-dotted {
     background: radial-gradient(circle at center, #666666 10%, transparent 12%), #545454;
@@ -41,6 +45,7 @@
 .vh-25 {min-height: 25vh!important;}
 .vh-50 {min-height: 50vh!important;}
 .vh-75 {min-height: 75vh!important;}
+.vh-85 {min-height: 85vh!important;}
 
 /* Carousel Style */
 #carouselExampleCaptions,
@@ -65,8 +70,8 @@
 }
 .swiper-slide {
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
 }
 .swiper-slide-active{
     transform: scale(1);
@@ -97,18 +102,9 @@
 .zoom-effect {
     animation-name: kvanar-shrink-animation;
     animation-duration: 6s;
-    background-size: auto 150%;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse;
-}
-@keyframes kvanar-shrink-animation {
-    0% {
-        background-size: auto 150%;
-    }
-    100% {
-        background-size: auto 140%;
-    }
 }
 
 /* DIVIDERS */

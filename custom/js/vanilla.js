@@ -74,27 +74,36 @@ $('document').ready(function () {
     /* LOGO UPDATE ON SCROLL */
     $(function() {
         const logo = $("#headerLogo");
+        let top_position = $(window).scrollTop();
         $(window).scroll(function() {
-            const scroll = $(window).scrollTop();
-            const vh = $("#frontScreen").height();
+            /* Scroll position in pixels from top of screen */
+            const scroll_position = $(window).scrollTop();
+            /* Height of First Div Section */
+            const vh = $("#firstSection").height();
 
-            if (scroll >= vh) {
-                if(!logo.hasClass("dark-logo")) {
-                    logo.hide();
-                    logo.removeClass('white-logo')
-                        .addClass("dark-logo")
-                        .attr('src', '/custom/img/logo-kvanar-db-ronshaw.png')
-                        .fadeIn( "slow");
-                }
+            // If scroll direction is down, hide header
+            // If scroll direction is up and outside first section, show header with white background
+            // else show header with transparent background
+
+            // When scroll-position is greater than top position, flag as scroll down.
+            const $header_selector = $("#header");
+            if (scroll_position > top_position && scroll_position >= vh) {
+                $header_selector.slideUp("slow");
             } else {
-                if(!logo.hasClass("white-logo")) {
-                    logo.hide();
-                    logo.removeClass("dark-logo")
-                        .addClass('white-logo')
-                        .attr('src', '/custom/img/logo-kvanar-db-ronshaw-white.png')
-                        .fadeIn( "slow");
+                if (scroll_position >= vh) {
+                    // Change Logo to Gray
+                    logo.attr('src', '/custom/img/logo-kvanar-db-ronshaw.png');
+                    // Set header to white background then show
+                    $header_selector.addClass("kvanar-header-white");
+                } else {
+                    // Change Logo to White
+                    logo.attr('src', '/custom/img/logo-kvanar-db-ronshaw-white.png');
+                    // Set header to transparrent background
+                    $header_selector.removeClass("kvanar-header-white");
                 }
+                $header_selector.slideDown("slow");
             }
+            top_position = scroll_position;
         });
     });
 
