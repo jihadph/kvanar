@@ -26,7 +26,7 @@ $('document').ready(function () {
         },
 
         autoplay: {
-            delay: 4000,
+            delay: 7000,
         },
     });
 

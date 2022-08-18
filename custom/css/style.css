@@ -64,6 +64,9 @@
 .empty-spacer {
     height: 150px;
 }
+.kvanar-spacer-top {
+    height: 300px;
+}
 
 /* Swiper */
 .swiper {
@@ -106,10 +109,10 @@
 .zoom-effect {
     animation-name: kvanar-shrink-animation;
     animation-duration: 6s;
-    background-size: auto 130%;
+    background-size: auto 150%;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
-    animation-direction: alter;
+    animation-direction: alternate-reverse;
 }
 @keyframes kvanar-shrink-animation {
     0%  {background-size: auto 150%;}
