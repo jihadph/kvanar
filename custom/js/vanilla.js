@@ -1,7 +1,7 @@
 /* jQuery Functions */
 $('document').ready(function () {
 
-    /* SWIPER-FIRST */
+    /* SWIPER-FIRST: Section 1 Introduction */
     const swiper_first = new Swiper('.swiper-first', {
         // Optional parameters
         direction: 'horizontal',
@@ -26,11 +26,11 @@ $('document').ready(function () {
         },
 
         autoplay: {
-            delay: 7000,
+            delay: 4000
         },
     });
 
-    /* SWIPER-SECOND */
+    /* SWIPER-SECOND: Projects */
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 'auto',
         effect: 'slide',
