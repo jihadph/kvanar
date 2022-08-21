@@ -73,33 +73,73 @@ $('document').ready(function () {
 
     /* LOGO UPDATE ON SCROLL */
     $(function() {
+
         const logo = $("#headerLogo");
         let top_position = $(window).scrollTop();
+
+        const $navbarDesktop = $("#navbarDesktop");
+        const $navbarLess = $("#navbarLess992");
+
         $(window).scroll(function() {
             /* Scroll position in pixels from top of screen */
             const scroll_position = $(window).scrollTop();
+
             /* Height of First Div Section */
-            const vh = $("#firstSection").height();
+            const vh = ($("#firstSection").height())/2;
 
             // If scroll direction is down, hide header
             // If scroll direction is up and outside first section, show header with white background
             // else show header with transparent background
 
-            // When scroll-position is greater than top position, flag as scroll down.
-            const $header_selector = $("#header");
+            // Background:
+            // Text: add .text-bg-dark to the .offcanvas
+            // Close Button: .btn-close-white to .btn-close
+
+            // When scroll-position is greater than top position,
+            // FLAG AS SCROLL DOWN.
+            const $header_selector = $("#newHeader");
+            const $hamburger = $("#hamburger");
+            const $hamburgerButton = $("#hamburgerButton");
             if (scroll_position > top_position && scroll_position >= vh) {
                 $header_selector.slideUp("slow");
-            } else {
+            }
+            // FLAG AS SCROLL UP
+            else {
                 if (scroll_position >= vh) {
+                    // DESKTOP NAVBAR
+                    if ($(window).outerWidth() >= 992) {
+                        $navbarDesktop.removeClass("kv-link-white");
+                        $navbarDesktop.addClass("kv-link-dark");
+                    }
+                    // END
+
                     // Change Logo to Gray
                     logo.attr('src', '/custom/img/logo-kvanar-db-ronshaw.png');
                     // Set header to white background then show
                     $header_selector.addClass("kvanar-header-white");
+                    $header_selector.addClass("kv-header-nav-link-dark");
+                    $hamburger.addClass("navbar-toggler-icon-dark");
+                    $hamburgerButton.addClass("navbar-toggler-dark");
+                    //$header_selector.removeClass("navbar-dark");
+                    //$header_selector.addClass("bg-dark");
                 } else {
+                    // DESKTOP NAVBAR
+                    if ($(window).outerWidth() >= 992) {
+                        $navbarDesktop.addClass("kv-link-white");
+                        $navbarDesktop.removeClass("kv-link-dark");
+                    }
+                    // END
+
                     // Change Logo to White
                     logo.attr('src', '/custom/img/logo-kvanar-db-ronshaw-white.png');
                     // Set header to transparrent background
                     $header_selector.removeClass("kvanar-header-white");
+                    $header_selector.removeClass("kv-header-nav-link-dark");
+                    $hamburger.removeClass("navbar-toggler-icon-dark");
+                    $hamburgerButton.removeClass("navbar-toggler-dark");
+                    //$header_selector.removeClass("kv-header-nav-link-dark");
+                    //$header_selector.addClass("navbar-dark");
+                    //$header_selector.removeClass("bg-dark");
                 }
                 $header_selector.slideDown("slow");
             }
@@ -122,5 +162,4 @@ $('document').ready(function () {
                 $('#'+$id).addClass('card-services-active')
             });
     });
-
 });

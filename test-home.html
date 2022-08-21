@@ -44,31 +44,103 @@
     <script src="/custom/js/jQuery-3.6.0.min.js"></script>
     <script src="/custom/js/vanilla.js"></script>
 </head>
-<body class="kvanar-text-gray">
+<body id="home" class="kvanar-text-gray">
 
-<!-- HEADER -->
-<div id="header" class="navbar navbar-expand-md fixed-top p-0">
+<!-- HEADER -
+<div id="newHeader" class="navbar navbar-light navbar-expand-lg fixed-top p-0" role="navigation">
     <div class="container">
         <div class="navbar-brand">
             <a href="index.html"><img id="headerLogo" src="/custom/img/logo-kvanar-db-ronshaw-white.png" alt="" class="img-fluid white-log" style="max-height: 90px!important;"></a>
         </div>
-        <button class="navbar-toggler text-white d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon text-white"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="offcanvas offcanvas-end d-none" id="offcanvasNavbar">
-            <div class="offcanvas-header"><h3>KVANAR</h3></div>
+        <div id="offcanvasNavbar" class="offcanvas offcanvas-end bg-dark" data-bs-scroll="true" >
+            <div class="offcanvas-header">
+                <h3>KVANAR</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
             <div class="offcanvas-body justify-content-end">
-                <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                    <a class="nav-link" href="#">SERVICES</a>
-                    <a class="nav-link" href="#">PROJECTS</a>
-                    <a class="nav-link" href="#">Let's Talk</a>
+                <div class="navbar-nav kv-header-nav-link mb-2 fs-5">
+                    <a class="nav-link me-4" aria-current="page" href="#home">About Us</a>
+                    <a class="nav-link me-4" href="#ourProjects">Projects</a>
+                    <a class="nav-link me-4" href="#ourServices">Services</a>
+                    <a class="nav-link me-4" href="#RonShaw">Designs by Ron Shaw</a>
+                    <a class="nav-link me-4" href="#footer">Let's Talk</a>
                 </div>
             </div>
         </div>
     </div>
 </div>
+-->
 
+<!---->
+<div id="newHeader" class="navbar navbar-expand-lg fixed-top navbar-dark" role="navigation">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="index.html">
+                <img id="headerLogo" src="/custom/img/logo-kvanar-db-ronshaw-white.png" alt="" class="img-fluid white-log" style="max-height: 90px!important;">
+            </a>
+        </div>
+
+        <!-- DESKTOP NAV-BAR -->
+        <!-- Screen greater than or equal to 992px -->
+        <div class="d-none d-lg-block">
+            <div id="navbarDesktop" class="navbar-nav fs-5 kv-link-white">
+                <a class="nav-link me-4" href="#home">About Us</a>
+                <a class="nav-link me-4" href="#ourServices">Services</a>
+                <a class="nav-link me-4" href="#RonShaw">Designs by Ron Shaw</a>
+                <a class="nav-link me-4" href="#ourProjects">Projects</a>
+                <a class="nav-link me-4" href="#footer">Let's Talk</a>
+            </div>
+        </div>
+
+        <!-- SMALL DEVICE NAV-BAR -->
+        <!-- Screen less than 992px -->
+        <div class="d-lg-none">
+            <button id="hamburgerButton" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offPanelNavBar" aria-controls="offPanelNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="hamburger" class="navbar-toggler-icon"></span>
+            </button>
+            <div id="offPanelNavBar" class="offcanvas offcanvas-lg offcanvas-end bg-dark" data-bs-scroll="true" aria-labelledby="offPanelKvanarLabel">
+                <div class="offcanvas-header">
+                    <div id="offPanelKvanarLabel" class="display-5 fw-semibold"><span class="d-none">KVANAR</span><span>&nbsp;</span></div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end display-6">
+                    <div class="navbar-nav kv-offpanel-link-white">
+                        <a class="nav-link mb-3" href="#home">About Us</a>
+                        <a class="nav-link mb-3" href="#ourServices">Services</a>
+                        <a class="nav-link mb-3" href="#RonShaw">Designs by Ron Shaw</a>
+                        <a class="nav-link mb-3" href="#ourProjects">Projects</a>
+                        <a class="nav-link mb-3" href="#footer">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        <button id="hamburgerButton" class="navbar-toggler d-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offPanelNavBar" aria-controls="offPanelNavBar" aria-expanded="false" aria-label="Toggle navigation">
+            <span id="hamburger" class="navbar-toggler-icon"></span>
+        </button>
+        <div id="offPanelNavBar" class="offcanvas offcanvas-end bg-dark d-none" data-bs-scroll="true" aria-labelledby="offPanelKvanarLabel">
+            <div class="offcanvas-header">
+                <div id="offPanelKvanarLabel" class="display-5 fw-semibold"><span class="d-none">KVANAR</span><span>&nbsp;</span></div>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body justify-content-end fs-5 fw-semibold hamburger-collapse">
+                <div class="navbar-nav mb-2">
+                    <a class="nav-link me-4" aria-current="page" href="#home">About Us</a>
+                    <a class="nav-link me-4" href="#ourProjects">Projects</a>
+                    <a class="nav-link me-4" href="#ourServices">Services</a>
+                    <a class="nav-link me-4" href="#RonShaw">Designs by Ron Shaw</a>
+                    <a class="nav-link me-4" href="#footer">Let's Talk</a>
+                </div>
+            </div>
+        </div>
+        -->
+    </div>
+</div>
+<!---->
 <!-- SECTION 1 -->
 <div class="container-fluid" id="firstSection">
     <div class="row min-vh-100">
@@ -93,7 +165,6 @@
 
                                         <div class="display-1 fw-semibold mb-2">CONCEPT</div>
                                         <div class="display-5">We ensure customer satisfaction from sketch to project completion.</div>
-                                        <a class="btn kv-btn-flat btn-lg mt-4 mb-3">Designs by Ron Shaw</a>
 
                                     </div>
                                 </div>
@@ -167,6 +238,7 @@
 </div>
 
 
+
 <!-- SECTION 2 -->
 <div class="container-fluid">
     <div class="container text-center">
@@ -182,6 +254,8 @@
         </div>
     </div>
 </div>
+
+<div id="ourServices"></div>
 
 <!-- SECTION 3A - BIG SCREEN -->
 <div class="container-fluid p-5 mb-5 kvanar-services-big-screen">
@@ -361,7 +435,7 @@
 </div>
 
 <!-- SECTION 5 RON SHAW -->
-<div class="container py-5">
+<div id="RonShaw" class="container py-5">
     <div class="row align-items-center pb-5">
 
         <div class="col-12 display-4 fw-bold text-center pb-5 mb-5" data-aos="fade-up" data-aos-duration="1300">
@@ -394,7 +468,7 @@
 </div>
 
 <!-- DIVIDER -->
-<div class="container-fluid p-4 p-sm-5">
+<div id="letsTalk" class="container-fluid p-4 p-sm-5">
     <div class="row align-items-center vh-50 kvanar-fixed-image rounded-4">
         <div class="col-lg-8 col-12 text-center m-auto">
             <div class="display-6 fw-bold kvanar-text-white mb-5">
@@ -406,7 +480,7 @@
 </div>
 
 <!-- SECTION 6 PROJECTS -->
-<div class="container-fluid p-sm-5 p-4">
+<div id="ourProjects" class="container-fluid p-sm-5 p-4">
     <div class="row pt-5 pb-5" data-aos="fade-up" data-aos-duration="1300">
         <div class="col-12 display-4 text-center pt-5 pb-5 kvanar-section-label">
             Our Projects
