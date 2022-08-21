@@ -34,18 +34,18 @@ $('document').ready(function () {
     const swiper = new Swiper(".mySwiper", {
         slidesPerView: 'auto',
         effect: 'slide',
-        grabCursor: true,
-        speed: 1000,
+        /*grabCursor: true,*/
         preloadImages: true,
         simulateTouch: true,
         updateOnWindowResize: true,
         spaceBetween: 20,
 
         // If we need pagination
+        /*
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
-        },
+        },/**/
 
         // Navigation arrows
         navigation: {
