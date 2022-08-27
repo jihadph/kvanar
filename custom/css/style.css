@@ -93,6 +93,7 @@
 .full-vh {min-height: 100vh;}
 .half-vh {min-height: 50vh;}
 .vh-25 {min-height: 25vh!important;}
+.vh-35 {min-height: 35vh!important;}
 .vh-50 {min-height: 50vh!important;}
 .vh-75 {min-height: 75vh!important;}
 .vh-85 {min-height: 85vh!important;}
@@ -117,10 +118,14 @@
     height: 20vh;
 }
 
-/* Swiper */
+/* SWIPER */
 .swiper {
     height: inherit;
 }
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{
+    bottom: 0 !important;
+}/**/
+
 .swiper-slide {
     background-repeat: no-repeat;
     background-position: center;
@@ -135,15 +140,18 @@
     color: #f0592a;
 }
 .swiper-pagination-bullet {
-    background-color: white;
+    background-color: #FFFFFF;
 }
+.swiper-pagination-bullet-gray > .swiper-pagination-bullet {
+    background-color: #545454;
+}
+.swiper-pagination-bullet-gray > .swiper-pagination-bullet-active,
 .swiper-pagination-bullet-active {
     background-color: #f0592a;
 }
 .swiper-text-container {
     background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 .image-div {
     background-repeat: no-repeat;
@@ -288,6 +296,7 @@
     min-height: 360px!important;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 40px !important; /* bring down bullets below the carousel items */
 }
 .swiper-projects .swiper-slide {
     text-align: center;
@@ -390,4 +399,9 @@
     margin-top: -150px;
     margin-right: 100px;
     margin-left: 70px;
+}
+
+/* IMAGES */
+.kv-img-container-team {
+    width: 100px!important;
 }

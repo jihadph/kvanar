@@ -41,7 +41,6 @@ $('document').ready(function () {
         spaceBetween: 20,
 
         // If we need pagination
-        /*
         pagination: {
             el: ".swiper-pagination",
             clickable: true,
@@ -101,7 +100,7 @@ $('document').ready(function () {
             const $hamburger = $("#hamburger");
             const $hamburgerButton = $("#hamburgerButton");
             if (scroll_position > top_position && scroll_position >= vh) {
-                $header_selector.slideUp("slow");
+                $header_selector.fadeOut("slow");
             }
             // FLAG AS SCROLL UP
             else {
