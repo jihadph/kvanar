@@ -41,9 +41,11 @@
 
 
 /* Kvanar Brand Color */
+.kv-text-black {color: #000000;}
+.kv-text-orange {color: #fe6600;}
 .kvanar-text-white {color: #FFFFFF;}
 .kvanar-text-gray {color: #545454;}
-.kvanar-text-orange {color: #f0592a;}
+.kvanar-text-orange {color: #fe6600;}
 .kvanar-text-cash {color: #118C4F;}
 .kvanar-bg-gray {
     background-color: #545454;
@@ -88,7 +90,19 @@
 .kvanar-section-label {
     font-family: 'Merriweather', sans-serif;
 }
-
+.kv-text-overlap-top {
+    position: relative;
+    top: 2em;
+}
+.kv-text-overlap-bottom {
+    position: relative;
+    bottom: 2.5em;
+}
+.kv-font-merrim {
+    font-family: 'Noto Serif HK', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
 /* Height */
 .full-vh {min-height: 100vh;}
 .half-vh {min-height: 50vh;}
@@ -341,11 +355,14 @@
     opacity: 1;
 }
 
-.kvanar-fixed-image {
+.kvanar-fixed-image-contact {
     background: url('/custom/img/kvanar-team-dark.jpg') no-repeat fixed center center ;
     background-size: cover;
 }
-
+.kvanar-fixed-image {
+    background: no-repeat fixed center center;
+    background-size: cover;
+}
 
 .kvanar-button-orange {
     background-color: #f0592a;
@@ -404,4 +421,80 @@
 /* IMAGES */
 .kv-img-container-team {
     width: 100px!important;
+}
+
+
+
+
+
+/* */
+.pre {
+    font-family: monospace;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 3px
+}
+
+.xwrapper {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.9em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; /*System Font Stack*/
+}
+
+.xwrapper {
+    width: 100%;
+    background-size: cover;
+    z-index: 1;
+}
+
+.xheader, .xsection, .xfooter {
+    width: 100%;
+    padding: 3em 10em;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 99;
+}
+.sticky {
+    min-height: 100vh;
+    max-height: 100vh;
+    height: 100vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+    z-index: 9;
+}
+
+.xheader {
+    height: 90vh;
+    color: white;
+    background: rgba(127, 127, 127, .2) radial-gradient(black 33%, transparent 33%);
+    background-size: 2px 2px;
+}
+.xfooter {
+    background: white;
+}
+.xsection {
+    color: white;
+}
+.xsection--s1 {
+    background-color: #333;
+    top: 40px;
+    max-height: calc(100vh - 40px) /* prevents hidden content due to the top position */
+}
+.xsection--s2 {
+    background-color: #666;
+    top: 80px;
+    max-height: calc(100vh - 80px)
+}
+.xsection--s3 {
+    background-color: #999;
+    top: 120px;
+    max-height: calc(100vh - 120px)
+}
+.xsection--s4 {
+    background-color: pink;
+    top: 160px;
+    max-height: calc(100vh - 160px)
 }

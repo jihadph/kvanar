@@ -21,6 +21,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
     <!-- Default CSS -->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">-->
     <link href="/custom/css/bootstrap.min.css" rel="stylesheet">
@@ -44,7 +45,7 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script src="/custom/js/vanilla.js"></script>
 </head>
-<body class="kvanar-text-gray">
+<body class="kv-text-black">
 
 <!-- HEADER -->
 <div id="header" class="navbar navbar-expand-lg bg-light" role="navigation">
@@ -73,7 +74,7 @@
     </div>
 </div>
 
-<div class="container-fluid pt-5">
+<div class="container-fluid pt-5 d-none">
     <div class="container pt-3">
         <div class="row py-5">
             <div class="col-12 display-4 fw-semibold">
@@ -84,12 +85,174 @@
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="kv-text-black kv-font-merrim kv-text-overlap-top text-center">
+                <span class="display-2 fw-semibold px-4">CONCEPT</span>
+                <span class="display-2 fw-semibold px-4">DESIGN</span>
+                <span class="display-2 fw-semibold px-4">BUILD</span>
+            </div>
+            <div class="kvanar-fixed-image" style="background-image: url('/custom/img/about/kvheader-07-seascape.jpg');">
+                <div class="row vh-75 align-items-center">
+                    <div class="col-12 text-end">
+                    </div>
+                </div>
+            </div>
+            <div class="kv-text-black kv-font-merrim kv-text-overlap-bottom text-end">
+                <span class="display-2 fw-semibold">PROJECT MANAGEMENT</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
+
 <!-- SECTION 2 -->
-<div class="container p-4">
+<div class="container py-5">
 
     <div class="row">
         <div class="col-12">
-            ... in progress
+            <div class="kv-font-merrim display-4 fw-semibold">Building quality homes</div>
+            <div class="display-6">successfully for the last eight years.</div>
+        </div>
+        <div class="col-lg-4 col-12"></div>
+        <div class="col-lg-8 col-12 my-lg-5 my-5">
+            <div class="d-lg-block py-5 d-none"></div>
+            <div class="fs-4">
+                With over 150 years of combined experience, we are confident that we can deliver the high level
+                and detailed needs of all project sizes throughout the Caribbean and in Turks and Caicos Island.
+                This includes quality procurement, efficient scheduling, and excellent construction management.
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="container py-4">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="kv-font-merrim display-4 fw-semibold">Satisfied Clients</div>
+        </div>
+        <div class="col-lg-4 col-12"></div>
+        <div class="col-lg-8 col-12 my-lg-5 my-5">
+            <div class="fs-4 mt-5">
+                We put in effort to understand our client's needs and goals. From this, we create designs
+                and build their dream homes that will leave a lasting impact in their lives and the surrounding community.
+                <span class="d-none">
+                    With a competent and innovative team, we develop designs and build together with our clients proactively
+                    from sketch to handover.
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
+
+<!-- SECTION 4 -->
+<div class="container py-5 mb-5">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="kv-font-merrim display-4 fw-semibold">Kvanar Team is Your Team</div>
+        </div>
+    </div>
+
+    <div class="row align-items-center my-5">
+        <div class="d-lg-block py-5 d-none"></div>
+        <div class="col-lg-6 col-12 px-4">
+            <div id="kvTeamPhotos" class="row">
+                <div class="col-4 d-grid gap-3">
+                    <div class="py-2"></div>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[3].img" v-bind:alt="kvTeam[3].name" data-bs-toggle="tooltip" data-bs-placement="top" v-bind:data-bs-title="kvTeam[3].name"/>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[2].img" v-bind:alt="kvTeam[2].name" data-bs-toggle="tooltip" data-bs-placement="bottom" v-bind:data-bs-title="kvTeam[2].name"/>
+                    <div class="py-2"></div>
+                </div>
+                <div class="col-4 d-grid gap-3">
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[1].img" v-bind:alt="kvTeam[1].name" data-bs-toggle="tooltip" data-bs-placement="top" v-bind:data-bs-title="kvTeam[1].name"/>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[4].img" v-bind:alt="kvTeam[4].name" data-bs-toggle="tooltip" data-bs-placement="bottom" v-bind:data-bs-title="kvTeam[4].name"/>
+                    <div class="py-2"></div>
+                </div>
+                <div class="col-4 d-grid gap-3">
+                    <div class="py-2"></div>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[5].img" v-bind:alt="kvTeam[5].name" data-bs-toggle="tooltip" data-bs-placement="top" v-bind:data-bs-title="kvTeam[5].name"/>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[6].img" v-bind:alt="kvTeam[6].name" data-bs-toggle="tooltip" data-bs-placement="bottom" v-bind:data-bs-title="kvTeam[6].name"/>
+                    <div class="py-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 px-4">
+            <div class="">
+                <div class="fs-4 mt-5">
+                    Always adopting to the latest construction technologies and methods, we assure you that your dream homes
+                    are completed meeting your standards. We are a diverse team from different backgrounds around the globe.
+                    Honestry and trust is central to our culture and transparency
+                    in delivering our projects.
+                </div>
+                <a class="btn kv-btn-flat btn-lg my-4 card-services-active rounded-5 px-5 fw-semibold fs-6 text-uppercase" href="/test-team.html">
+                    Get to know us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="10 9.5 20 16">
+                        <path fill-rule="evenodd" d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="container d-none">
+
+    <div class="xwrapper">
+        <div class="xheader">
+            <h1>Quick Sticky Scrolling Sample</h1>
+            <p>This is a quick CSS implementation of sticky scrolling. As the page scrolls any 'sticky' xsection will stick to the top as the remaining page content continues to scroll.</p>
+        </div>
+        <div class="xsection sticky xsection--s1">
+            <h1>Markup</h1>
+            <p>The page is laid out using <span class="pre">xheader</span>, <span class="pre">xsection</span>, and <span class="pre">xfooter&#;</span> tags. Any xsection that will stick to the top of the page, like this one, has a <span class="pre">.sticky</span> class.</p>
+        </div>
+        <div class="xsection sticky xsection--s2">
+            <h1>Styling</h1>
+            <p>Each <span class="pre">.sticky</span> xsection of the page is styled to cover the full screen height using <span class="pre">max-height:100vh; min-height: 100vh; height: 100vh;</span>. It is important that the xsection is no taller otherwise the contents will be hidden 'below the fold'.</p>
+            <p>The xsection sticks using <span class="pre">position:-webkit-sticky; position: sticky; top: -1px;</span> where <span class="pre">top</span> sets the point at which the xsection sticks.</p>
+        </div>
+        <div class="xsection sticky xsection--s3">
+            <h1>JavaScript</h1>
+            <p>There isn't any! This is a pure CSS solution which has <a href="#">about 80% support</a> in the US and 70% support worldwide at the time of writing. In unsupported browsers the content scrolls normally.</p>
+        </div>
+        <div class="xsection sticky xsection--s4">
+            HELLO WORLD 1
+        </div>
+        <div class="xfooter">
+            <h1>That's all.</h1>
+            <p>Simple trick for a nice visual effect.</p>
         </div>
     </div>
 
@@ -170,8 +333,8 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="/custom/js/swiper-bundle.min.js"></script>
 <script src="/custom/js/aos.js"></script>
 <script src="/custom/js/glightbox.min.js"></script>
@@ -181,20 +344,19 @@
     createApp({
         data() {
             return {
-                projects : {
-                    1: { project: 'Drake Developments - Villa Development', client: 'DRAKE Development', location: 'Leeward, Providenciales, TCI, BWI', area: '5,400 sf', date: 'February 2021', status: 'Complete', img : ''},
-                    2: { project: 'Provo Beverage - Storage Facility', client: 'PROVO Beverage', location: 'Industrial Area, Providenciales, TCI, BWI', area: '10,000 sf', date: 'December 2020', status: 'Complete', img : ''},
-                    3: { project: 'Elite Gaming - Downtown Gaming Parlour', client: 'Downtown Gaming Parlour', location: 'Downtown, Providenciales, TCI, BWI', area: '11,000 sf', date: 'September 2019', status: 'Complete', img : ''},
-                    4: { project: 'Seascape - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : ''},
-                    5: { project: 'Sentosa - Main Villa', client: 'Sentosa II', location: 'Leeward, Providenciales, TCI, BWI', area: '5,000 sf', date: 'July 2017', status: 'Complete', img : ''},
-                    6: { project: 'The Dunes - Villa Development (Phase 2)', client: 'The Dunes Development', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '4,700 sf', date: 'February 2017', status: 'Complete', img : ''},
-                    7: { project: 'Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : ''},
-                    8: { project: 'The Shore Club - Tunnels and Swimming Pools', client: 'The Shore Club', location: 'Long Bay, Providenciales, TCI, BWI', area: 'na', date: 'August 2016', status: 'Complete', img : ''},
-                    9: { project: 'Bajacu - Villa Renovation & Extension Works', client: 'Bajacu ', location: 'Ocean Drive, Providenciales, TCI, BWI', area: 'na', date: 'November 2015', status: 'Complete', img : ''}
+                kvTeam : {
+                    1: {name: 'Christopher Haggie', position: 'Managing Director', img: 'KV-Chris.jpg'},
+                    2: {name: 'Randy Howell', position: 'Major Projects Bid Leader & Contracts Manager', img: 'KV-Randy.jpg'},
+                    3: {name: 'Andrew Henry', position: 'Business Development & Tendering Manager', img: 'KV-Andrew.jpg'},
+                    4: {name: 'MarieClaude Bourgie', position: 'International Procurement & Buying', img: 'KV-MC.jpg'},
+                    5: {name: 'Richard Scott', position: 'Project Manager', img: 'KV-Richard.jpg'},
+                    6: {name: 'Marvin Manalo', position: 'Structural & Finishes Foreman\n', img: 'KV-Marvin.jpg'},
+                    7: {name: 'Edwin Ewing', position: 'Heavy Equipment Operator', img: 'Edwin-Ewing.jpeg'},
+                    8: {name: 'Jose Villegas', position: 'Heavy Equipment Operator', img: 'Jose-Villegas.jpeg'},
                 }
             }
         }
-    }).mount('#projects');
+    }).mount('#kvTeamPhotos');
 </script>
 </body>
 </html>
