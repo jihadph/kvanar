@@ -1,0 +1,67 @@
+/* CORE */
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+/* SWIPER */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* SLIDE SPECIFIC */
+.why-kvanar-first-slide {
+    background-image: url('/custom/img/why-kvanar/why-kvanar-cropped.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 70vh;
+}
+.why-kvanar-second-slide {
+    background-image: url('/custom/img/why-kvanar/why-kvanar-cropped.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center -30vh;
+}
+
+/* REMAINING SLIDE */
+.why-kvanar-image-1,
+.why-kvanar-image-2,
+.why-kvanar-image-3,
+.why-kvanar-image-4,
+.why-kvanar-image-5,
+.why-kvanar-image-6
+{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+}
+.why-kvanar-image-1 {
+    background-image: url('/custom/img/why-kvanar/why-kvanar-long-bay-beach.jpg');
+}
+.why-kvanar-image-2 {
+    background-image: url('/custom/img/why-kvanar/client.jpg');
+}
+.why-kvanar-image-3 {
+    background-image: url('/custom/img/why-kvanar/pexels-1.jpg');
+}
+.why-kvanar-image-4 {
+    background-image: url('/custom/img/why-kvanar/pexels-2.jpg');
+}
+.why-kvanar-image-5 {
+    background-image: url('/custom/img/why-kvanar/pexels-3.jpg');
+}
+.why-kvanar-image-6 {
+    background-image: url('/custom/img/why-kvanar/pexels-4.jpg');
+}

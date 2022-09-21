@@ -1,0 +1,36 @@
+/* Background Color */
+.kv-bg-black {background-color: black;}
+.kv-bg-white {background-color: white;}
+.kv-bg-pink {background-color: pink;}
+
+/* Font Family */
+.kv-font-noto {
+    font-family: 'Noto Serif HK', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Height */
+
+.kv-vh-25min {min-height: 25vh!important;}
+.kv-vh-35min {min-height: 35vh!important;}
+.kv-vh-50min {min-height: 50vh!important;}
+.kv-vh-70min {min-height: 70vh!important;}
+.kv-vh-75min {min-height: 75vh!important;}
+.kv-vh-85min {min-height: 85vh!important;}
+
+.kv-vh-25 {height: 25vh!important;}
+.kv-vh-35 {height: 35vh!important;}
+.kv-vh-50 {height: 50vh!important;}
+.kv-vh-70 {height: 70vh!important;}
+.kv-vh-75 {height: 75vh!important;}
+.kv-vh-85 {height: 85vh!important;}
+
+.kv-vh-25max {max-height: 25vh!important;}
+.kv-vh-35max {max-height: 35vh!important;}
+.kv-vh-50max {max-height: 50vh!important;}
+.kv-vh-70max {max-height: 70vh!important;}
+.kv-vh-75max {max-height: 75vh!important;}
+.kv-vh-85max {max-height: 85vh!important;}
+
+.kv-vh-inherit {min-height: inherit!important;}
