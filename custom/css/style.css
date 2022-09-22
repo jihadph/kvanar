@@ -451,7 +451,7 @@
 }
 .xsection, .xfooter {
     width: 100%;
-    padding: 0.5em 1em;
+    /*padding: 0.5em 1em;*/
     box-sizing: border-box;
     position: relative;
     z-index: 99;
@@ -475,35 +475,35 @@
     background: white;
 }
 .xsection {
-    color: white;
+    /*color: white;*/
 }
 .xsection--s1 {
-    background-color: #333;
-    top: 130px;
+    /*background-color: #333;*/
+    /*top: 130px;*/
     max-height: calc(100vh - 130px) /* prevents hidden content due to the top position */
 }
 .xsection--s2 {
-    background-color: #666;
-    top: 180px;
+    /*background-color: #666;*/
+    /*top: 180px;*/
     max-height: calc(100vh - 180px)
 }
 .xsection--s3 {
-    background-color: #999;
-    top: 230px;
+    /*background-color: #999;*/
+    /*top: 230px;*/
     max-height: calc(100vh - 230px)
 }
 .xsection--s4 {
-    background-color: pink;
-    top: 280px;
+    /*background-color: pink;*/
+    /*top: 280px;*/
     max-height: calc(100vh - 280px)
 }
 .xsection--s5 {
-    background-color: #999;
-    top: 330px;
+    /*background-color: #999;*/
+    /*top: 330px;*/
     max-height: calc(100vh - 330px)
 }
 .xsection--s6 {
-    background-color: #333;
-    top: 380px;
+    /*background-color: #333;*/
+    /*top: 380px;*/
     max-height: calc(100vh - 380px)
 }
