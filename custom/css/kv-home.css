@@ -5,3 +5,11 @@
 .kv-service-4 {padding-top: 150px;}
 .kv-service-5 {padding-top: 200px;}
 .kv-service-6 {padding-top: 250px;}
+
+/* */
+.kv-bg-img-deck {
+    background-image: url('/custom/img/divider-deck.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}

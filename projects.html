@@ -49,27 +49,50 @@
 <!-- HEADER -->
 <div id="header" class="navbar navbar-expand-lg bg-light" role="navigation">
     <div class="container">
+
         <div class="navbar-brand">
-            <a href="test-home.html"><img id="headerLogo2" src="/custom/img/logo-kvanar-db-ronshaw.png" alt="" class="img-fluid white-log" style="max-height: 90px!important;"></a>
+            <a href="index.html">
+                <img id="headerLogo2" src="/custom/img/logo-kvanar-db-ronshaw.png" alt="" class="img-fluid white-log" style="max-height: 90px!important;">
+            </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offPanelNavBar" aria-controls="offPanelNavBar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="offPanelNavBar" class="offcanvas offcanvas-lg offcanvas-end" data-bs-scroll="true" aria-labelledby="offPanelKvanarLabel">
-            <div class="offcanvas-header">
-                <div id="offPanelKvanarLabel" class="fs-3 fw-semibold">KVANAR</div>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        <!-- DESKTOP NAV-BAR -->
+        <!-- Screen greater than or equal to 992px -->
+        <div class="d-none d-lg-block">
+            <div id="" class="navbar-nav fs-5">
+                <a class="nav-link me-4" href="/about.html">About Us</a>
+                <a class="nav-link me-4" href="/index.html#ourServices">Services</a>
+                <a class="nav-link me-4" href="/index.html#RonShaw">Designs by Ron Shaw</a>
+                <a class="nav-link me-4" href="/projects.html">Projects</a>
+                <a class="nav-link me-4" href="/why-kvanar.html">Why Kvanar</a>
             </div>
-            <div class="offcanvas-body justify-content-end">
-                <div class="navbar-nav mb-2 fs-5">
-                    <a class="nav-link me-4" aria-current="page" href="#home">About Us</a>
-                    <a class="nav-link me-4" href="#ourProjects">Projects</a>
-                    <a class="nav-link me-4" href="#ourServices">Services</a>
-                    <a class="nav-link me-4" href="#RonShaw">Designs by Ron Shaw</a>
-                    <a class="nav-link me-4" href="#footer">Let's Talk</a>
+        </div>
+
+        <!-- SMALL DEVICE NAV-BAR -->
+        <!-- Screen less than 992px -->
+        <div class="d-lg-none">
+            <button id="hamburgerButton" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offPanelNavBar" aria-controls="offPanelNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="hamburger" class="navbar-toggler-icon"></span>
+            </button>
+            <div id="offPanelNavBar" class="offcanvas offcanvas-lg offcanvas-end bg-dark" data-bs-scroll="true" aria-labelledby="offPanelKvanarLabel">
+                <div class="offcanvas-header">
+                    <div id="offPanelKvanarLabel" class="display-5 fw-semibold"><span class="d-none">KVANAR</span><span>&nbsp;</span></div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end display-6">
+                    <div class="navbar-nav kv-offpanel-link-white">
+                        <a class="nav-link mb-3" href="/about.html">About Us</a>
+                        <a class="nav-link mb-3" href="/index.html#ourServices">Services</a>
+                        <a class="nav-link mb-3" href="/index.html#RonShaw">Designs by Ron Shaw</a>
+                        <a class="nav-link mb-3" href="/projects.html">Projects</a>
+                        <a class="nav-link me-34" href="/why-kvanar.html">Why Kvanar</a>
+                        <a class="nav-link mb-3" href="#footer">Let's Talk</a>
+                    </div>
                 </div>
             </div>
         </div>
+
+
     </div>
 </div>
 
@@ -211,14 +234,12 @@
             return {
                 projects : {
                     1: { project: 'Drake Developments - Villa Development', client: 'DRAKE Development', location: 'Leeward, Providenciales, TCI, BWI', area: '5,400 sf', date: 'February 2021', status: 'Complete', img : ''},
-                    2: { project: 'Provo Beverage - Storage Facility', client: 'PROVO Beverage', location: 'Industrial Area, Providenciales, TCI, BWI', area: '10,000 sf', date: 'December 2020', status: 'Complete', img : ''},
-                    3: { project: 'Elite Gaming - Downtown Gaming Parlour', client: 'Downtown Gaming Parlour', location: 'Downtown, Providenciales, TCI, BWI', area: '11,000 sf', date: 'September 2019', status: 'Complete', img : ''},
-                    4: { project: 'Seascape - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : ''},
-                    5: { project: 'Sentosa - Main Villa', client: 'Sentosa II', location: 'Leeward, Providenciales, TCI, BWI', area: '5,000 sf', date: 'July 2017', status: 'Complete', img : ''},
-                    6: { project: 'The Dunes - Villa Development (Phase 2)', client: 'The Dunes Development', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '4,700 sf', date: 'February 2017', status: 'Complete', img : ''},
-                    7: { project: 'Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : ''},
-                    8: { project: 'The Shore Club - Tunnels and Swimming Pools', client: 'The Shore Club', location: 'Long Bay, Providenciales, TCI, BWI', area: 'na', date: 'August 2016', status: 'Complete', img : ''},
-                    9: { project: 'Bajacu - Villa Renovation & Extension Works', client: 'Bajacu ', location: 'Ocean Drive, Providenciales, TCI, BWI', area: 'na', date: 'November 2015', status: 'Complete', img : ''}
+                    2: { project: 'Seascape - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : ''},
+                    3: { project: 'Sentosa - Main Villa', client: 'Sentosa II', location: 'Leeward, Providenciales, TCI, BWI', area: '5,000 sf', date: 'July 2017', status: 'Complete', img : ''},
+                    4: { project: 'The Dunes - Villa Development (Phase 2)', client: 'The Dunes Development', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '4,700 sf', date: 'February 2017', status: 'Complete', img : ''},
+                    5: { project: 'Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : ''},
+                    6: { project: 'The Shore Club - Tunnels and Swimming Pools', client: 'The Shore Club', location: 'Long Bay, Providenciales, TCI, BWI', area: 'na', date: 'August 2016', status: 'Complete', img : ''},
+                    7: { project: 'Bajacu - Villa Renovation & Extension Works', client: 'Bajacu ', location: 'Ocean Drive, Providenciales, TCI, BWI', area: 'na', date: 'November 2015', status: 'Complete', img : ''}
                 }
             }
         }

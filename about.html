@@ -15,12 +15,13 @@
     <!--<meta name="robots" content="noarchive">-->
     <!--<meta name="robots" content="max-image-preview:standard">-->
 
-    <title>Kvanar | Team</title>
+    <title>Kvanar | About</title>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+HK:wght@300&display=swap" rel="stylesheet">
     <!-- Default CSS -->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">-->
     <link href="/custom/css/bootstrap.min.css" rel="stylesheet">
@@ -44,120 +45,214 @@
     <script src="https://unpkg.com/vue@3"></script>
     <script src="/custom/js/vanilla.js"></script>
 </head>
-<body class="kvanar-text-gray">
+<body class="kv-text-black">
 
 <!-- HEADER -->
 <div id="header" class="navbar navbar-expand-lg bg-light" role="navigation">
+
     <div class="container">
+
         <div class="navbar-brand">
-            <a href="test-home.html"><img id="headerLogo2" src="/custom/img/logo-kvanar-db-ronshaw.png" alt="" class="img-fluid white-log" style="max-height: 90px!important;"></a>
+            <a href="index.html">
+                <img id="headerLogo2" src="/custom/img/logo-kvanar-db-ronshaw.png" alt="" class="img-fluid white-log" style="max-height: 90px!important;">
+            </a>
         </div>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offPanelNavBar" aria-controls="offPanelNavBar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="offPanelNavBar" class="offcanvas offcanvas-lg offcanvas-end" data-bs-scroll="true" aria-labelledby="offPanelKvanarLabel">
-            <div class="offcanvas-header">
-                <div id="offPanelKvanarLabel" class="fs-3 fw-semibold">KVANAR</div>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+
+        <!-- DESKTOP NAV-BAR -->
+        <!-- Screen greater than or equal to 992px -->
+        <div class="d-none d-lg-block">
+            <div id="" class="navbar-nav fs-5">
+                <a class="nav-link me-4" href="/about.html">About Us</a>
+                <a class="nav-link me-4" href="/index.html#ourServices">Services</a>
+                <a class="nav-link me-4" href="/index.html#RonShaw">Designs by Ron Shaw</a>
+                <a class="nav-link me-4" href="/projects.html">Projects</a>
+                <a class="nav-link me-4" href="/why-kvanar.html">Why Kvanar</a>
             </div>
-            <div class="offcanvas-body justify-content-end">
-                <div class="navbar-nav mb-2 fs-5">
-                    <a class="nav-link me-4" aria-current="page" href="#home">About Us</a>
-                    <a class="nav-link me-4" href="#ourProjects">Projects</a>
-                    <a class="nav-link me-4" href="#ourServices">Services</a>
-                    <a class="nav-link me-4" href="#RonShaw">Designs by Ron Shaw</a>
-                    <a class="nav-link me-4" href="#footer">Let's Talk</a>
+        </div>
+
+        <!-- SMALL DEVICE NAV-BAR -->
+        <!-- Screen less than 992px -->
+        <div class="d-lg-none">
+            <button id="hamburgerButton" class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offPanelNavBar" aria-controls="offPanelNavBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span id="hamburger" class="navbar-toggler-icon"></span>
+            </button>
+            <div id="offPanelNavBar" class="offcanvas offcanvas-lg offcanvas-end bg-dark" data-bs-scroll="true" aria-labelledby="offPanelKvanarLabel">
+                <div class="offcanvas-header">
+                    <div id="offPanelKvanarLabel" class="display-5 fw-semibold"><span class="d-none">KVANAR</span><span>&nbsp;</span></div>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
+                <div class="offcanvas-body justify-content-end display-6">
+                    <div class="navbar-nav kv-offpanel-link-white">
+                        <a class="nav-link mb-3" href="/about.html">About Us</a>
+                        <a class="nav-link mb-3" href="/index.html#ourServices">Services</a>
+                        <a class="nav-link mb-3" href="/index.html#RonShaw">Designs by Ron Shaw</a>
+                        <a class="nav-link mb-3" href="/projects.html">Projects</a>
+                        <a class="nav-link me-34" href="/why-kvanar.html">Why Kvanar</a>
+                        <a class="nav-link mb-3" href="#footer">Let's Talk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div class="container-fluid pt-5 d-none">
+    <div class="container pt-3">
+        <div class="row py-5">
+            <div class="col-12 display-4 fw-semibold">
+                About Us
+                <div class="kvanar-divider"></div>
             </div>
         </div>
     </div>
 </div>
 
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
 
-<!-- SECTION 2 TEAM -->
-<div class="container p-4">
-    <div class="row my-5">
-        <div class="col-12 display-4 fw-semibold">
-            Meet the team
-            <div class="kvanar-divider"></div>
+<div class="container mb-5">
+    <div class="row">
+        <div class="col-12">
+            <div class="kv-text-black kv-font-merrim kv-text-overlap-top text-center">
+                <span class="display-2 fw-semibold px-4">CONCEPT</span>
+                <span class="display-2 fw-semibold px-4">DESIGN</span>
+                <span class="display-2 fw-semibold px-4">BUILD</span>
+            </div>
+            <div class="kvanar-fixed-image" style="background-image: url('/custom/img/about/kvheader-06-seclusion.jpg');">
+                <div class="row vh-75 align-items-center">
+                    <div class="col-12 text-end">
+                    </div>
+                </div>
+            </div>
+            <div class="kv-text-black kv-font-merrim kv-text-overlap-bottom text-end">
+                <span class="display-2 fw-semibold">PROJECT MANAGEMENT</span>
+            </div>
         </div>
     </div>
+</div>
 
-    <div id="kvTeams" class="row mb-5 g-5">
-        <div class="col-lg-6 col-12" v-for="(member, key) in kvTeam">
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
 
-            <div class="card rounded-4">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <a role="button" type="button" data-bs-toggle="modal" v-bind:data-bs-target="'#team_' + key">
-                        <img v-bind:src="'/custom/img/team/' + member.img" class="img-fluid rounded-4" v-bind:alt="'Photo of ' + member.name">
-                        </a>
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <div class="card-title fs-4 fw-semibold">
-                                <!-- Button trigger modal -->
-                                <a class="link-secondary" role="button" type="button" data-bs-toggle="modal" v-bind:data-bs-target="'#team_' + key">
-                                    {{member.name}}
-                                </a>
-                            </div>
-                            <div class="fs-6 fw-semibold kvanar-text-orange mb-3">{{member.position}}</div>
-                            <p class="card-text">
-                                "You can design and create, and build the most wonderful place in the world. But it takes people to make the dream a reality."
-                            </p>
-                        </div>
-                    </div>
-                </div>
+<!-- SECTION 2 -->
+<div class="container py-5">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="kv-font-merrim display-4 fw-semibold">Building quality homes</div>
+            <div class="display-6">successfully for the last eight years.</div>
+        </div>
+        <div class="col-lg-4 col-12"></div>
+        <div class="col-lg-8 col-12 my-lg-5 my-5">
+            <div class="d-lg-block py-5 d-none"></div>
+            <div class="fs-4">
+                With over 150 years of combined experience, we are confident that we can deliver the high level
+                and detailed needs of all project sizes throughout the Caribbean and in Turks and Caicos Island.
+                This includes quality procurement, efficient scheduling, and excellent construction management.
             </div>
-
-            <!-- MODAL -->
-
-            <!-- Modal -->
-            <div class="modal fade" v-bind:id="'team_' + key" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-fullscreen-lg-down ">
-                    <div class="modal-content">
-                        <div class="modal-header bg-light">
-                            <h5 class="modal-title" id="exampleModalLabel">{{member.name}}</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body p-5">
-                            <div class="container">
-                                <div class="row g-5 mb-5">
-                                    <div class="col-lg-3 col-12">
-                                        <img v-bind:src="'/custom/img/team/' + member.img" class="img-fluid rounded-4" v-bind:alt="'Photo of ' + member.name">
-                                    </div>
-                                    <div class="col-lg-9 col-12">
-                                        <div class="display-5 fw-semibold">{{member.name}}</div>
-                                        <div class="display-6">{{member.position}}</div>
-                                    </div>
-                                </div>
-                                <div class="row g-5 py-5" v-if="member.experience.length > 0">
-                                    <div class="col-lg-3 col-12"><span class="h4">Experience</span></div>
-                                    <div class="col-lg-9 col-12"><span class="fs-4">{{member.experience}}</span></div>
-                                </div>
-                                <div class="row g-5 py-5" v-if="member.role.length > 0">
-                                    <div class="col-lg-3 col-12"><span class="h4">Role</span></div>
-                                    <div class="col-lg-9 col-12"><span class="fs-4">{{member.role}}</span></div>
-                                </div>
-                                <div class="row g-5 py-5" v-if="member.qualification.length > 0">
-                                    <div class="col-lg-3 col-12"><span class="h4">Qualifications</span></div>
-                                    <div class="col-lg-9 col-12"><span class="fs-4">{{member.qualification}}</span></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </div>
 
 </div>
 
-<div class="py-5"></div>
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
+
+<!-- SECTION 3 -->
+<div class="container py-4">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="kv-font-merrim display-4 fw-semibold">Satisfied Clients</div>
+        </div>
+        <div class="col-lg-4 col-12"></div>
+        <div class="col-lg-8 col-12 my-lg-5 my-5">
+            <div class="fs-4 mt-5">
+                We put in effort to understand our client's needs and goals. From this, we create designs
+                and build their dream homes that will leave a lasting impact in their lives and the surrounding community.
+                Always adopting to the latest construction technologies and methods, we assure you that your dream homes
+                are completed meeting your standards.
+                <span class="d-none">
+                    With a competent and innovative team, we develop designs and build together with our clients proactively
+                    from sketch to handover.
+                </span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-12 py-5"></div>
+    </div>
+</div>
+
+<!-- SECTION 4 -->
+<div class="container py-5 mb-5">
+
+    <div class="row">
+        <div class="col-12">
+            <div class="kv-font-merrim display-4 fw-semibold">Our Team is Your Team</div>
+        </div>
+    </div>
+
+    <div class="row align-items-center my-5">
+        <div class="d-lg-block py-5 d-none"></div>
+        <div class="col-lg-6 col-12 px-4">
+            <div id="kvTeamPhotos" class="row">
+                <div class="col-4 d-grid gap-3">
+                    <div class="py-2"></div>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[3].img" v-bind:alt="kvTeam[3].name" data-bs-toggle="tooltip" data-bs-placement="top" v-bind:data-bs-title="kvTeam[3].name"/>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[2].img" v-bind:alt="kvTeam[2].name" data-bs-toggle="tooltip" data-bs-placement="bottom" v-bind:data-bs-title="kvTeam[2].name"/>
+                    <div class="py-2"></div>
+                </div>
+                <div class="col-4 d-grid gap-3">
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[1].img" v-bind:alt="kvTeam[1].name" data-bs-toggle="tooltip" data-bs-placement="top" v-bind:data-bs-title="kvTeam[1].name"/>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[4].img" v-bind:alt="kvTeam[4].name" data-bs-toggle="tooltip" data-bs-placement="bottom" v-bind:data-bs-title="kvTeam[4].name"/>
+                    <div class="py-2"></div>
+                </div>
+                <div class="col-4 d-grid gap-3">
+                    <div class="py-2"></div>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[5].img" v-bind:alt="kvTeam[5].name" data-bs-toggle="tooltip" data-bs-placement="top" v-bind:data-bs-title="kvTeam[5].name"/>
+                    <img class="img-fluid rounded-4" v-bind:src="'/custom/img/team/' + kvTeam[6].img" v-bind:alt="kvTeam[6].name" data-bs-toggle="tooltip" data-bs-placement="bottom" v-bind:data-bs-title="kvTeam[6].name"/>
+                    <div class="py-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-12 px-4">
+            <div class="">
+                <div class="fs-4 mt-5">
+                    We are a diverse team from different backgrounds around the globe.
+                    Honesty and trust is central to our culture, and excellence
+                    is our forefront when delivering our projects.
+                </div>
+                <a class="btn kv-btn-flat btn-lg my-4 card-services-active rounded-5 px-5 fw-semibold fs-6 text-uppercase" href="/test-team.html">
+                    Get to know us
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="10 9.5 20 16">
+                        <path fill-rule="evenodd" d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 <div class="py-5"></div>
 
 <!-- FOOTER -->
@@ -232,8 +327,8 @@
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="/custom/js/swiper-bundle.min.js"></script>
 <script src="/custom/js/aos.js"></script>
 <script src="/custom/js/glightbox.min.js"></script>
@@ -244,18 +339,18 @@
         data() {
             return {
                 kvTeam : {
-                    1: {name: 'Christopher Haggie', position: 'Managing Director', img: 'KV-Chris.jpg', experience: '23 years of experience', role: 'Management of all Kvanar Business Activities.', qualification: 'BSc (Hons) Construction Engineering ManagementAssociate Member of the Chartered Institute of Building (ACIOB)'},
-                    2: {name: 'Randy Howell', position: 'Major Projects Bid Leader & Contracts Manager', img: 'KV-Randy.jpg', experience: '24 years of experience', role: 'Daily management and overseeing all live projects, including controlling budgets, negotiation and management of subcontracts, procurement of materials & supplies locally, co-ordination of bi-weekly evaluation of subcontract packages.', qualification: 'Construction Project Management - Certificate,  Construction Scheduling - Certificate, Construction Cost Estimating & Control - Certificate, Construction Finance - Certificate'},
-                    3: {name: 'Andrew Henry', position: 'Business Development & Tendering Manager', img: 'KV-Andrew.jpg', experience: '30 years of experience', role: 'Managing all Business Development, Tendering and Estimating functions within the company together with overseeing the cost control of live projects to ensure that projects meet the budget.', qualification: 'Incorporate Member of the Chartered Institute of Building (ICIOB)'},
-                    4: {name: 'MarieClaude Bourgie', position: 'International Procurement & Buying', img: 'KV-MC.jpg', experience: '20 years of experience', role: 'Managing all purchases of construction material, inventories, material schedules, change of orders & shipping logistics.', qualification: 'Accreditation Certificates of Canadian Construction Association'},
-                    5: {name: 'Richard Scott', position: 'Project Manager', img: 'KV-Richard.jpg', experience: '30 years of experience', role: 'Senior Project Manager liasing directly between Client and company, supervising all management and site operational actvities, monitoring build and project progress, ensuring quality and safety at all time in the satisfactory delivery of the project from start to finish.', qualification: ''},
-                    6: {name: 'Marvin Manalo', position: 'Structural & Finishes Foreman\n', img: 'KV-Marvin.jpg', experience: '25 years of experience', role: 'Supervision of structural frame construction  and finish elements, including but not limited to setting out, QA/QC, works packages planning and logistics, measurement, scheduling delivery of materials, QA, safety file, daily records, sourcing labour and plant, managing and liaising with subcontractors, and co-ordinating local material deliveries.', qualification: 'Time Served Finishing Carpenter'},
-                    7: {name: 'Edwin Ewing', position: 'Heavy Equipment Operator', img: 'Edwin-Ewing.jpeg', experience: 'Please fill', role: 'Heavy Equipment Operator, management and stock control of company plant yard including deliveries serving all operational projects', qualification: ''},
-                    8: {name: 'Jose Villegas', position: 'Heavy Equipment Operator', img: 'Jose-Villegas.jpeg', experience: 'Please fill', role: 'Heavy Equipment Operator, management and stock control of company plant yard including deliveries serving all operational projects', qualification: ''},
+                    1: {name: 'Christopher Haggie', position: 'Managing Director', img: 'KV-Chris.jpg'},
+                    2: {name: 'Randy Howell', position: 'Major Projects Bid Leader & Contracts Manager', img: 'KV-Randy.jpg'},
+                    3: {name: 'Andrew Henry', position: 'Business Development & Tendering Manager', img: 'KV-Andrew.jpg'},
+                    4: {name: 'MarieClaude Bourgie', position: 'International Procurement & Buying', img: 'KV-MC.jpg'},
+                    5: {name: 'Richard Scott', position: 'Project Manager', img: 'KV-Richard.jpg'},
+                    6: {name: 'Marvin Manalo', position: 'Structural & Finishes Foreman\n', img: 'KV-Marvin.jpg'},
+                    7: {name: 'Edwin Ewing', position: 'Heavy Equipment Operator', img: 'Edwin-Ewing.jpeg'},
+                    8: {name: 'Jose Villegas', position: 'Heavy Equipment Operator', img: 'Jose-Villegas.jpeg'},
                 }
             }
         }
-    }).mount('#kvTeams');
+    }).mount('#kvTeamPhotos');
 </script>
 </body>
 </html>
