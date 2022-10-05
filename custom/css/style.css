@@ -444,12 +444,9 @@
     z-index: 1;
 }
 
-.xheader {
-    padding: 0.5em 1em;
-    position: relative;
-    z-index: 99;
-}
-.xsection, .xfooter {
+.xheader,
+.xsection,
+.xfooter {
     width: 100%;
     /*padding: 0.5em 1em;*/
     box-sizing: border-box;
@@ -461,7 +458,14 @@
     max-height: 100vh;
     position: -webkit-sticky;
     position: sticky;
-    top: 130px;
+    top: 230px;
+    z-index: 9;
+}
+.kv-service-sticky {
+    height: 50vh;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 100px;
     z-index: 9;
 }
 
@@ -474,6 +478,7 @@
 .xfooter {
     background: white;
 }
+
 .xsection--s1 {
     /*background-color: #333;*/
     /*top: 130px;*/
