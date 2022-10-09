@@ -15,12 +15,13 @@
     <!--<meta name="robots" content="noarchive">-->
     <!--<meta name="robots" content="max-image-preview:standard">-->
 
-    <title>Kvanar | Projects</title>
+    <title>Kvanar | Project</title>
 
     <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
+
     <!-- Default CSS -->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">-->
     <link href="/custom/css/bootstrap.min.css" rel="stylesheet">
@@ -39,6 +40,7 @@
     <link href="/custom/css/kv-common.css" rel="stylesheet">
     <link href="/custom/css/quote.css" rel="stylesheet">
     <link href="/custom/css/kvanar-animation.css" rel="stylesheet">
+    <link href="/custom/css/project.css" rel="stylesheet">
 
     <!-- Custom JS -->
     <script src="/custom/js/jQuery-3.6.0.min.js"></script>
@@ -97,70 +99,84 @@
     </div>
 </div>
 
-<div class="container-fluid pt-5">
-    <div class="container pt-3">
-        <div class="row py-5">
-            <div class="col-12 display-4 fw-semibold">
-                All Projects
-                <div class="kvanar-divider"></div>
+
+<!-- SECTION 2 PROJECT -->
+<div class="container py-4">
+    <div id="detailedProject" class="row">
+        <div class="col-12 display-4 fw-semibold py-4 mb-4">
+            <div class="py-4">
+                {{project.name}}
             </div>
+        </div>
+        <div class="col-12 mb-5">
+
+            <!-- SWIPER -->
+            <div class="swiper kv-swiper-first rounded-4">
+
+                <!-- [START] Additional required wrapper -->
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide" v-for="(value, key) in project.photos">
+                        <div class="image-container" v-bind:style="'background-image: url(\'' + project.directory + project.photoLabel + key +  '\');'">
+
+                            <!-- Black Background with Opacity -->
+                            <div class="kv-vh-85 text-white">
+
+                                <!-- Inner Content -->
+                                <div class="container">
+                                    <div class="row kv-vh-85 align-items-end">
+                                        <div class="col-lg-12 col-10 px-5 pt-3 pb-5 swiper-text-container">
+
+                                            <div class="fs-3 fw-semibold mb-2">{{ project.label }} {{ ' - ' + value }}</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- [END] Additional required wrapper -->
+
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+            </div>
+            <!-- SWIPER END -->
+        </div>
+
+
+        <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="fs-4">Client:</div>
+            <div class="fs-3 fw-semibold">{{ project.client }}</div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="fs-4">Location:</div>
+            <div class="fs-3 fw-semibold">{{ project.location }}</div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="fs-4">Area:</div>
+            <div class="fs-3 fw-semibold">{{ project.area }}</div>
+        </div>
+        <div class="col-lg-6 col-md-6 col-12 mb-4">
+            <div class="fs-4">Completed on:</div>
+            <div class="fs-3 fw-semibold">{{ project.date }}</div>
         </div>
     </div>
 </div>
 
 <!-- SECTION 2 PROJECTS SUMMARY -->
-<div class="container p-4">
-    <!-- Project 1-->
-    <div id="projects">
-        <div class="row rounded-4 py-5 mb-5" v-for="(project, key) in projects">
-            <div class="col-lg-6 col-12">
-                <div class="row align-items-center">
-
-                    <!--Image Holder -->
-                    <div v-if="project.img !== ''">
-                        <div class="vh-75 image-div m-auto rounded-4" v-bind:style="'background-image: url(\'/custom/projects/' + project.img + '\');'">
-                        </div>
-                    </div>
-                    <div v-else>
-                        <div class="vh-75 image-div m-auto rounded-4" style="background-image: url('/custom/img/photo_placeholder.jpg');">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <div class="col-lg-6 col-12">
-                <div class="row p-md-4 p-3">
-                    <div class="col-12 kvanar-text-orange">
-                        <div class="display-6 fw-semibold">
-                            <span v-if="project.active === true"><a class="kv-link" v-bind:href="'/project.html?pid='+key">{{project.project}}</a></span>
-                            <span v-else>{{project.project}}</span>
-                        </div>
-                    </div>
-                    <div class="col-12 py-4"></div>
-                    <div class="col-md-4 h5">Client:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.client}}</div>
-                    <div class="col-12 py-1"></div>
-                    <div class="col-md-4 h5">Location:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.location}}</div>
-                    <div class="col-12 py-1"></div>
-                    <div class="col-md-4 h5">Built-up Area:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.area}}</div>
-                    <div class="col-12 py-1"></div>
-                    <div class="col-md-4 h5">Completed On:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.date}}</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
 <div class="py-5"></div>
 <div class="py-5"></div>
 
 <!-- FOOTER -->
-<svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(84, 84, 84, 1)" offset="0%"></stop><stop stop-color="rgba(84, 84, 84, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L30,30C60,30,120,30,180,40C240,50,300,70,360,73.3C420,77,480,63,540,60C600,57,660,63,720,60C780,57,840,43,900,46.7C960,50,1020,70,1080,66.7C1140,63,1200,37,1260,35C1320,33,1380,57,1440,63.3C1500,70,1560,60,1620,58.3C1680,57,1740,63,1800,63.3C1860,63,1920,57,1980,46.7C2040,37,2100,23,2160,20C2220,17,2280,23,2340,30C2400,37,2460,43,2520,40C2580,37,2640,23,2700,28.3C2760,33,2820,57,2880,61.7C2940,67,3000,53,3060,45C3120,37,3180,33,3240,35C3300,37,3360,43,3420,43.3C3480,43,3540,37,3600,35C3660,33,3720,37,3780,38.3C3840,40,3900,40,3960,45C4020,50,4080,60,4140,58.3C4200,57,4260,43,4290,36.7L4320,30L4320,100L4290,100C4260,100,4200,100,4140,100C4080,100,4020,100,3960,100C3900,100,3840,100,3780,100C3720,100,3660,100,3600,100C3540,100,3480,100,3420,100C3360,100,3300,100,3240,100C3180,100,3120,100,3060,100C3000,100,2940,100,2880,100C2820,100,2760,100,2700,100C2640,100,2580,100,2520,100C2460,100,2400,100,2340,100C2280,100,2220,100,2160,100C2100,100,2040,100,1980,100C1920,100,1860,100,1800,100C1740,100,1680,100,1620,100C1560,100,1500,100,1440,100C1380,100,1320,100,1260,100C1200,100,1140,100,1080,100C1020,100,960,100,900,100C840,100,780,100,720,100C660,100,600,100,540,100C480,100,420,100,360,100C300,100,240,100,180,100C120,100,60,100,30,100L0,100Z"></path></svg>
 <div id="footer" class="container-fluid kvanar-bg-gray pt-3 pb-3">
     <div class="container">
         <div class="row pt-3 pb-5 align-items-end">
@@ -238,23 +254,235 @@
 <script src="/custom/js/glightbox.min.js"></script>
 <script src="/custom/js/slick.js"></script>
 <script>
-    const { createApp } = Vue;
-    createApp({
-        data() {
-            return {
-                projects : {
-                    1: { active: false, project: 'Drake Developments - Villa Development', client: 'DRAKE Development', location: 'Leeward, Providenciales, TCI, BWI', area: '5,400 sf', date: 'February 2021', status: 'Complete', img : ''},
-                    2: { active: true, project: 'Seascape - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : 'seascape-1.jpg'},
-                    3: { active: true, project: 'Sentosa - Main Villa', client: 'Sentosa II', location: 'Leeward, Providenciales, TCI, BWI', area: '5,000 sf', date: 'July 2017', status: 'Complete', img : 'sentosa-1.jpg'},
-                    4: { active: false, project: 'The Dunes - Villa Development (Phase 2)', client: 'The Dunes Development', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '4,700 sf', date: 'February 2017', status: 'Complete', img : ''},
-                    5: { active: true, project: 'Hyperion - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-hyperion-2.jpg'},
-                    6: { active: true, project: 'Eos & Helios - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-eos-1.jpg'},
-                    7: { active: false, project: 'The Shore Club - Tunnels and Swimming Pools', client: 'The Shore Club', location: 'Long Bay, Providenciales, TCI, BWI', area: 'na', date: 'August 2016', status: 'Complete', img : ''},
-                    8: { active: false, project: 'Bajacu - Villa Renovation & Extension Works', client: 'Bajacu ', location: 'Ocean Drive, Providenciales, TCI, BWI', area: 'na', date: 'November 2015', status: 'Complete', img : ''}
+    $('document').ready(function () {
+
+        const masterProjects = {
+            1 : {
+                name: 'Drake Developments - Villa Development',
+                label: 'Drake Development',
+                client: 'DRAKE Development',
+                location: 'Leeward, Providenciales, TCI, BWI',
+                area: '5,400 sf',
+                date: 'February 2021',
+                status: 'Complete',
+                photoQty: 1,
+                photoLabel: 'drake-',
+                directory: '/custom/projects/drake/',
+                photos: {}
+            },
+            2 : {
+                name: 'Seascape - Villa Development',
+                label: 'Seascape',
+                client: 'Seascape & Seaclusion',
+                location: 'Turtle Cove, Providenciales, TCI, BWI',
+                area: '12,000 sf',
+                date: 'July 2019',
+                status: 'Complete',
+                photoQty: 20,
+                photoLabel: 'seascape-',
+                directory: '/custom/projects/seascape/',
+                photos: {
+                    1: 'Beach Side',
+                    2: 'Beach Side',
+                    3: 'Beach Side',
+                    4: 'Beach View',
+                    5: 'Beach View',
+                    6: 'Outdoor Dining Area',
+                    7: 'Outdoor Dining Area',
+                    8: 'First Floor Terrace',
+                    9: 'Living Room',
+                    10: 'Living Room',
+                    11: 'Indoor Dining Area',
+                    12: 'Kitchen',
+                    13: 'Living Room',
+                    14: 'Living Room',
+                    15: 'Master Bedroom',
+                    16: 'Bedroom',
+                    17: 'Bedroom',
+                    18: 'Bathroom',
+                    19: 'Bathroom',
+                    20: 'Bathroom',
                 }
+            },
+            3 : {
+                name: 'Sentosa - Main Villa',
+                label: 'Sentosa',
+                client: 'Sentosa II',
+                location: 'Leeward, Providenciales, TCI, BWI',
+                area: '5,000 sf',
+                date: 'July 2017',
+                status: 'Complete',
+                photoQty: 7,
+                photoLabel: 'sentosa-',
+                directory: '/custom/projects/sentosa/',
+                photos: {
+                    1 : 'Pool Area',
+                    2 : 'Living Room',
+                    3 : 'Master\'s Bedroom',
+                    4 : 'Living Area',
+                    5 : 'Bathroom',
+                    6 : 'Outdoor Bath Area',
+                    7 : 'Relaxation Area',
+                }
+            },
+            4 : {
+                name: 'The Dunes - Villa Development (Phase 2)',
+                label: 'Dunes',
+                client: 'The Dunes Development',
+                location: 'Turtle Cove, Providenciales, TCI, BWI',
+                area: '4,700 sf',
+                date: 'February 2017',
+                status: 'Complete',
+                photoQty: 0,
+                photoLabel: 'dunes-',
+                directory: '/custom/projects/dunes/',
+                photos: {}
+            },
+            5 : {
+                name: 'Hyperion Villa - Long Bay Beach Club',
+                label: 'Hyperion Villa',
+                client: 'Long Bay Beach Club',
+                location: 'Long Bay, Providenciales, TCI, BWI',
+                area: '13,000 sf',
+                date: 'February 2017',
+                status: 'Complete',
+                photoQty: 15,
+                photoLabel: 'LBBC-hyperion-',
+                directory: '/custom/projects/LBBC-hyperion/',
+                photos: {
+                    1 : 'Beach Side',
+                    2 : 'Beach Side',
+                    3 : 'Front Side',
+                    4 : 'Beach View',
+                    5 : 'Living Room',
+                    6 : 'Living Room',
+                    7 : 'Outdoor Dine Area',
+                    8 : 'Kitchen',
+                    9 : 'Family Room',
+                    10 : 'Bedroom with Beach View',
+                    11 : 'Bedroom',
+                    12 : 'Bedroom',
+                    13 : 'Bedroom',
+                    14 : 'Bathroom',
+                    15 : 'Bathroom',
+                }
+            },
+            6 : {
+                name: 'Eos & Helios Villa - Long Bay Beach Club',
+                label: 'Eos & Helios Villa',
+                client: 'Long Bay Beach Club',
+                location: 'Long Bay, Providenciales, TCI, BWI',
+                area: '13,000 sf',
+                date: 'February 2017',
+                status: 'Complete',
+                photoQty: 14,
+                photoLabel: 'LBBC-eos-',
+                directory: '/custom/projects/LBBC-eos/',
+                photos: {
+                    1 : 'Beach Side with Pool',
+                    2 : 'Front Side',
+                    3 : 'Living Room',
+                    4 : 'Family Room',
+                    5 : 'Dining Area and Kitchen',
+                    6 : 'Kitchen',
+                    7 : 'Dining Area',
+                    8 : 'Outdoor Area',
+                    9 : 'Outdoor Area',
+                    10 : 'Bedroom with Beach View',
+                    11 : 'Bedroom with Beach View',
+                    12 : 'Bedroom',
+                    13 : 'Bedroom',
+                    14 : 'Bedroom',
+                }
+            },
+            7 : {
+                name: 'The Shore Club - Tunnels and Swimming Pools',
+                label: 'The Shore Club',
+                client: 'The Shore Club',
+                location: 'Long Bay, Providenciales, TCI, BWI',
+                area: 'NA',
+                date: 'August 2016',
+                status: 'Complete',
+                photoQty: 0,
+                photoLabel: 'shore-club-',
+                directory: '/custom/projects/shore-club/',
+                photos: {}
+            },
+            8 : {
+                name: 'Bajacu - Villa Renovation & Extension Works',
+                label: 'Bajacu',
+                client: 'Bajacu',
+                location: 'Ocean Drive, Providenciales, TCI, BWI',
+                area: 'NA',
+                date: 'November 2015',
+                status: 'Complete',
+                photoQty: 0,
+                photoLabel: 'bajacu-',
+                directory: '/custom/projects/bajacu/',
+                photos: {}
             }
         }
-    }).mount('#projects');
+
+        // Fetch URL
+        let urlParams = new URLSearchParams(window.location.search);
+        // Check 'pid' exists
+        if (urlParams.has('pid')) {
+            // Get Project ID
+            let projectID = urlParams.get('pid');
+            // Show Project Details and Photos
+            showProject(projectID);
+        }
+
+        // Show Project
+        function showProject(projectID) {
+
+            const { createApp } = Vue;
+            createApp({
+                data() {
+                    return {
+                        project: masterProjects[projectID],
+                    }
+                }
+            }).mount('#detailedProject');
+        }
+
+        /* Swiper Setup */
+        const kv_swiper = new Swiper('.kv-swiper-first', {
+            // Optional parameters
+            slidesPerView: 1,
+            direction: 'horizontal',
+            loop: true,
+            effect: 'slide',
+            grabCursor: true,
+            speed: 700,
+            preloadImages: true,
+            simulateTouch: true,
+            updateOnWindowResize: true,
+
+            // Keyboard Control
+            keyboard: {
+                enabled: true,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            },
+
+            // Navigation Arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            /*autoplay: {
+                delay: 4000
+            },*/
+        });
+
+    });
+
 </script>
 </body>
 </html>

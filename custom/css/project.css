@@ -1,0 +1,20 @@
+.kv-swiper-first .image-container {
+    background-size: 100%;
+}
+.kv-swiper-first .swiper-slide.swiper-slide-active .image-container {
+    background-position: center
+}
+
+@media (min-width: 992px) {
+    .image-container {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+    .kv-swiper-first .image-container {
+        background-size: 100%;
+    }
+    .kv-swiper-first .swiper-slide.swiper-slide-active .image-container {
+        background-size: 100%;
+    }
+}

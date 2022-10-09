@@ -2,6 +2,7 @@
 .kv-bg-black {background-color: black;}
 .kv-bg-white {background-color: white;}
 .kv-bg-pink {background-color: pink;}
+.kv-bg-gray {background-color: #545454;}
 
 /* Font Family */
 .kv-font-noto {
@@ -11,7 +12,6 @@
 }
 
 /* Height */
-
 .kv-vh-25min {min-height: 25vh!important;}
 .kv-vh-35min {min-height: 35vh!important;}
 .kv-vh-50min {min-height: 50vh!important;}
@@ -34,3 +34,13 @@
 .kv-vh-85max {max-height: 85vh!important;}
 
 .kv-vh-inherit {min-height: inherit!important;}
+
+
+/* Links */
+a.kv-link {
+    color: #fe6600;
+    text-decoration: none;
+}
+a.kv-link:hover {
+    color: #4da6ff;
+}
