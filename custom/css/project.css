@@ -18,3 +18,34 @@
         background-size: 100%;
     }
 }
+
+/* Image */
+.gallery:hover .image-gallery {
+    filter: grayscale(1);
+}
+.glightbox:hover .image-gallery {
+    filter: grayscale(0);
+}
+.glightbox:hover .gallery-caption {
+    opacity: 1;
+}
+.image-gallery {
+    transition: 0.3s
+}
+.image-gallery:hover {
+    background-size: 105%;
+}
+.gallery-thumb {
+    position: relative;
+}
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 25px 15px 15px;
+    width: 100%;
+    color: white;
+    opacity: 0;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 0) 100%);
+    transition: 0.3s;
+}

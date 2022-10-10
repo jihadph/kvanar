@@ -14,6 +14,7 @@
 /* Height */
 .kv-vh-25min {min-height: 25vh!important;}
 .kv-vh-35min {min-height: 35vh!important;}
+.kv-vh-40min {min-height: 40vh!important;}
 .kv-vh-50min {min-height: 50vh!important;}
 .kv-vh-70min {min-height: 70vh!important;}
 .kv-vh-75min {min-height: 75vh!important;}
@@ -21,6 +22,7 @@
 
 .kv-vh-25 {height: 25vh!important;}
 .kv-vh-35 {height: 35vh!important;}
+.kv-vh-40 {height: 40vh!important;}
 .kv-vh-50 {height: 50vh!important;}
 .kv-vh-70 {height: 70vh!important;}
 .kv-vh-75 {height: 75vh!important;}
@@ -28,6 +30,7 @@
 
 .kv-vh-25max {max-height: 25vh!important;}
 .kv-vh-35max {max-height: 35vh!important;}
+.kv-vh-40max {max-height: 40vh!important;}
 .kv-vh-50max {max-height: 50vh!important;}
 .kv-vh-70max {max-height: 70vh!important;}
 .kv-vh-75max {max-height: 75vh!important;}
