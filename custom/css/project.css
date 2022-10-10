@@ -20,12 +20,6 @@
 }
 
 /* Image */
-.gallery:hover .image-gallery {
-    filter: grayscale(1);
-}
-.glightbox:hover .image-gallery {
-    filter: grayscale(0);
-}
 .glightbox:hover .gallery-caption {
     opacity: 1;
 }

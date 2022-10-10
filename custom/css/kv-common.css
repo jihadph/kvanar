@@ -11,6 +11,12 @@
     font-style: normal;
 }
 
+.kv-font-merriweather {
+    font-family: "Merriweather", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
 /* Height */
 .kv-vh-25min {min-height: 25vh!important;}
 .kv-vh-35min {min-height: 35vh!important;}

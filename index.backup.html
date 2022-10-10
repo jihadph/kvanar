@@ -99,9 +99,9 @@
 
     </div>
 </div>
-
+<!---->
 <!-- SECTION 1 -->
-<div class="container-fluid mb-5" id="firstSection">
+<div class="container-fluid" id="firstSection">
     <div class="row min-vh-100">
 
         <!-- SWIPER -->
@@ -197,8 +197,10 @@
     </div>
 </div>
 
+
+
 <!-- SECTION 2 -->
-<div class="container-fluid py-5 mb-5">
+<div class="container-fluid">
     <div class="container text-center">
         <div class="row align-items-center half-vh">
 
@@ -221,37 +223,83 @@
     </div>
 </div>
 
+
+
 <!-- SECTION 3A - BIG SCREEN -->
-<div id="ourServices" class="container mb-5 kvanar-services-big-screen">
-    <div id="kvServicesBigScreenVue" class="row">
+<div id="ourServices" class="container-fluid p-4 p-sm-5 mt-5 kvanar-services-big-screen">
+    <div class="row" id="kvServicesBigScreenVue">
+        <div class="xwrapper">
 
-        <div class="col-12 py-3">
-            <div class="display-4 text-center kv-font-noto fw-bold" data-aos="fade-down" data-aos-duration="1000">Our Services</div>
-            <div class="kvanar-divider my-3 m-auto"></div>
-        </div>
-
-        <div class="col-12">
-            <div class="container">
-                <div class="row kv-vh-25min py-5 my-4 align-items-center kv-services rounded-4" v-for="(services, key) in kvServices">
-                    <div class="col-md-6 col-12 px-5" data-aos="fade-right" data-aos-duration="1000" ><span class="fs-1 kv-font-noto fw-bold">{{services.name}}</span></div>
-                    <div class="col-md-6 col-12" data-aos="fade-left" data-aos-duration="1000" ><span class="fs-4">{{services.description}}</span></div>
+            <div class="xsection kv-service-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 display-4 text-center py-3 kv-font-noto fw-bold">
+                            Our Services
+                            <div class="kvanar-divider my-3 m-auto"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
 
+            <!-- Vue Loop Start -->
+            <div class="xsection sticky" v-for="(services, key) in kvServices">
+                <div class="container">
+                    <div class="row">
+                        <div v-bind:class="'col-6 kv-service-' + key">
+                            <h3 class="">{{services.name}}</h3>
+                        </div>
+                        <div v-bind:class="'col-6 kv-bg-white kv-service-' + key">
+                            <p class="fs-5">{{services.description}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Vue Loop End -->
+
+            <!-- Great Memories Start -->
+            <div class="xsection sticky">
+                <div class="container-fluid vh-75">
+
+                    <div class="row align-items-center kvanar-bg-orange-light rounded-4">
+                        <div class="col-lg-6 col-12">
+                            <div class="row align-items-center">
+                                <div class="vh-75 image-div m-auto rounded-4" style="background-image: url('/custom/img/12-long-bay-beach-02.jpg');"
+                                     data-aos="fade-up"
+                                     data-aos-duration="1000">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-12 text-white" data-aos="fade-right" data-aos-duration="1000">
+                            <div class="row align-items-center">
+                                <div class="col-md-10 p-md-4 p-5 m-auto display-2 ">
+                                    Great
+                                    <span class="kvanar-text-roll display-3"></span>
+                                    <br />begin with great homes.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- Great Memories End -->
+
+        </div>
     </div>
 </div>
 
-<!-- SECTION 3B - SMALL SCREEN -->
-<div class="container-fluid p-4 p-sm-5 my-5 kvanar-services-small-screen">
-    <div id="kvServicesSmallScreenVue" class="row">
 
-        <div class="display-4 mb-4 py-3 kvanar-section-label text-center" data-aos="fade-down" data-aos-duration="1000">
+
+<!-- SECTION 3B - SMALL SCREEN -->
+<div class="container-fluid p-4 p-sm-5 mb-5 kvanar-services-small-screen">
+    <div class="row" id="kvServicesSmallScreenVue">
+
+        <div class="display-4 mb-4 p-2 kvanar-section-label text-center" data-aos="fade-down" data-aos-duration="1000">
             Our Services
             <div class="kvanar-divider my-3 m-auto"></div>
         </div>
 
-        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5 mb-5" data-aos="fade-up" data-aos-duration="1000" v-for="(services, key) in kvServices">
+        <div class="col-12 border border-1 rounded-4 p-4 p-sm-5 mb-5" data-aos="fade-up" data-aos-duration="1000"  v-for="(services, key) in kvServices">
             <h4 class="mb-4 kvanar-text-orange">{{services.name}}</h4>
             <p class="fs-5 mb-0">{{services.description}}</p>
         </div>
@@ -262,7 +310,7 @@
 
 
 <!-- SECTION 4 GREAT BEGIN WITH -->
-<div class="container-fluid mb-5 p-4 p-sm-5">
+<div class="container-fluid mb-5 kvanar-services-small-screen">
     <div class="row align-items-center kvanar-bg-orange-light rounded-4">
         <div class="col-lg-6 col-12">
             <div class="row align-items-center">
@@ -285,14 +333,14 @@
 </div>
 
 <!-- SECTION 5 RON SHAW -->
-<div id="RonShaw" class="container mb-5">
-    <div class="row align-items-center">
+<div id="RonShaw" class="container pb-5">
+    <div class="row align-items-center pb-5">
 
-        <div class="col-12 display-4 fw-bold text-center py-5" data-aos="fade-up" data-aos-duration="1300">
-            Your dream home designed by award-winning architect <span class="kvanar-red text-highlight text-highlight-red">Ron Shaw</span>
+        <div class="col-12 display-4 fw-bold text-center pb-5 mb-5" data-aos="fade-up" data-aos-duration="1300">
+            Your dream home designed by <br />award winning architect <span class="kvanar-red text-highlight text-highlight-red">Ron Shaw</span>
         </div>
 
-        <div class="col-md-6 col-12 py-5">
+        <div class="col-md-6 col-12 mb-5">
             <div class="row">
                 <div class="col-12 col-md-8 m-auto" data-aos="fade-up" data-aos-duration="1000">
                     <img class="img-fluid" src="/custom/img/logo-ron-shaw-01.jpg" alt="">
@@ -300,7 +348,7 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-12 py-5" data-aos="fade-right" data-aos-duration="1000">
+        <div class="col-md-6 col-12 mb-5" data-aos="fade-right" data-aos-duration="1000">
             <div class="row">
                 <div class="col-12">
                     <blockquote class="quote-card">
@@ -314,7 +362,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 </div>
 
