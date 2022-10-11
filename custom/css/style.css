@@ -35,7 +35,8 @@
     color: #545454;
 }
 .kv-link-white > a:hover,
-.kv-offpanel-link-white > a:hover {
+.kv-offpanel-link-white > a:hover,
+.kv-link-dark > a:hover {
     color: #fe6600;
 }
 
