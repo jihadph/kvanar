@@ -355,8 +355,9 @@
     </div>
     <div class="row mb-3 row-cols-1 row-cols-md-3 g-4">
         <div class="col" v-for="(project, key) in projects" data-aos="fade-up" data-aos-duration="1300">
-            <div class="kv-image-container kv-vh-50 image-gallery rounded-4 kv-im"  v-bind:style="'background-image: url(\'/custom/projects/' + project.img +  '\');'">
-            </div>
+            <a class="kv-link" v-bind:href="'/project.html?pid=' + project.pid" target="_blank">
+                <div class="kv-image-container kv-vh-50 image-gallery rounded-4 kv-im"  v-bind:style="'background-image: url(\'/custom/projects/' + project.img +  '\');'"></div>
+            </a>
             <div class="py-3 fs-5"><a class="kv-link" v-bind:href="'/project.html?pid=' + project.pid" target="_blank">{{project.name}}</a></div>
         </div>
     </div>
