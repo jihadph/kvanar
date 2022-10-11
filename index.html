@@ -68,7 +68,7 @@
                 <a class="nav-link me-4" href="/about.html">About Us</a>
                 <a class="nav-link me-4" href="#ourServices">Services</a>
                 <a class="nav-link me-4" href="#RonShaw">Designs by Ron Shaw</a>
-                <a class="nav-link me-4" href="/projects.html">Projects</a>
+                <a class="nav-link me-4" href="#ourProjects">Projects</a>
                 <a class="nav-link me-4" href="/why-kvanar.html">Why Kvanar</a>
             </div>
         </div>
@@ -89,7 +89,7 @@
                         <a class="nav-link mb-3" href="/about.html">About Us</a>
                         <a class="nav-link mb-3" href="#ourServices">Services</a>
                         <a class="nav-link mb-3" href="#RonShaw">Designs by Ron Shaw</a>
-                        <a class="nav-link mb-3" href="/projects.html">Projects</a>
+                        <a class="nav-link mb-3" href="#ourProjects">Projects</a>
                         <a class="nav-link me-34" href="/why-kvanar.html">Why Kvanar</a>
                         <a class="nav-link mb-3" href="#footer">Let's Talk</a>
                     </div>
@@ -147,7 +147,7 @@
 
                                         <div class="display-1 fw-semibold mb-2">DESIGN</div>
                                         <div class="display-5">We create designs with a responsible approach to the environment.</div>
-                                        <a class="btn kv-btn-flat btn-lg mt-4 mb-3">Designs by Ron Shaw</a>
+                                        <a class="btn kv-btn-flat btn-lg mt-4 mb-3" href="#RonShaw">Designs by Ron Shaw</a>
 
                                     </div>
                                 </div>
@@ -221,11 +221,14 @@
     </div>
 </div>
 
+<!-- Do not use #ourServices ID as selector in JS -->
+<div id="ourServices"></div>
+
 <!-- SECTION 3A - BIG SCREEN -->
-<div id="ourServices" class="container mb-5 kvanar-services-big-screen">
+<div class="container mb-5 kvanar-services-big-screen">
     <div id="kvServicesBigScreenVue" class="row">
 
-        <div class="col-12 py-3">
+        <div class="col-12 pt-5 pb-3">
             <div class="display-4 text-center kv-font-noto fw-bold" data-aos="fade-down" data-aos-duration="1000">Our Services</div>
             <div class="kvanar-divider my-3 m-auto"></div>
         </div>
@@ -260,13 +263,12 @@
 </div>
 
 
-
 <!-- SECTION 4 GREAT BEGIN WITH -->
 <div class="container-fluid mb-5 p-4 p-sm-5">
     <div class="row align-items-center kvanar-bg-orange-light rounded-4">
         <div class="col-lg-6 col-12">
             <div class="row align-items-center">
-                <div class="vh-75 image-div m-auto rounded-4" style="background-image: url('/custom/img/12-long-bay-beach-02.jpg');"
+                <div class="kv-vh-70 kv-bg-pan-hover rounded-4" style="background-image: url('/custom/projects/seascape-15.jpg');"
                      data-aos="fade-up"
                      data-aos-duration="1000">
                 </div>
@@ -274,7 +276,7 @@
         </div>
         <div class="col-lg-6 col-12 text-white" data-aos="fade-right" data-aos-duration="1000">
             <div class="row align-items-center">
-                <div class="col-md-10 p-md-4 p-5 m-auto display-2 ">
+                <div class="col-md-10 p-md-4 p-5 m-auto display-2">
                     Great
                     <span class="kvanar-text-roll display-3"></span>
                     <br />begin with great homes.
@@ -283,6 +285,7 @@
         </div>
     </div>
 </div>
+
 
 <!-- SECTION 5 RON SHAW -->
 <div id="RonShaw" class="container mb-5">
@@ -318,227 +321,60 @@
     </div>
 </div>
 
-<!-- DIVIDER -->
-<div id="letsTalk" class="container-fluid p-4 p-sm-5">
-    <div class="row align-items-center vh-50 kvanar-fixed-image-contact rounded-4">
-        <div class="col-lg-8 col-12 text-center m-auto">
-            <div class="display-6 fw-bold kvanar-text-white mb-5">
-                Our team is guided by the values of honesty, trust, teamwork and innovation.
+<!-- CONTACT US -->
+<div class="container-fluid mb-5 p-4 p-sm-5">
+    <div class="row align-items-center kvanar-bg-orange-light rounded-4">
+        <div class="col-lg-6 col-12 text-white" data-aos="fade-left" data-aos-duration="1000">
+            <div class="row align-items-center">
+                <div class="col-md-10 p-md-4 p-5 m-auto text-center">
+                    <div class="fs-1 fw-semibold kvanar-text-white mb-5">
+                        Our team is guided by the values of honesty, trust, teamwork and innovation.
+                    </div>
+                    <a href="/team.html" class="btn kv-btn-flat btn-lg" role="button">Connect with us</a>
+                </div>
             </div>
-            <a href="/team.html" class="btn kv-btn-flat btn-lg" role="button">Connect with us</a>
+        </div>
+        <div class="col-lg-6 col-12">
+            <div class="row align-items-center">
+                <div class="kv-vh-70 kv-image-container rounded-4" style="background-image: url('/custom/img/kvanar-team-dark.jpg');"
+                     data-aos="fade-right"
+                     data-aos-duration="1000">
+                </div>
+            </div>
         </div>
     </div>
 </div>
 
 <!-- SECTION 6 PROJECTS -->
-<div id="ourProjects" class="container-fluid p-sm-5 p-4">
-    <div class="row pt-5 pb-5" data-aos="fade-up" data-aos-duration="1300">
-        <div class="col-12 display-4 text-center pt-5 pb-5 kv-font-noto fw-bold">
-            Our Projects
+<div id="ourProjects" class="container-fluid mb-5 px-sm-5 px-4">
+    <div class="row mb-5" data-aos="fade-up" data-aos-duration="1300">
+        <div class="col-12 display-4 text-center pt-5 pb-3 kv-font-noto fw-bold">
+            Featured Projects
             <div class="kvanar-divider my-3 m-auto"></div>
         </div>
     </div>
-
-    <div class="row pb-5" data-aos="fade-down" data-aos-duration="1300">
-        <div class="swiper swiper-projects mySwiper rounded-4" style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-long-bay-beach-img-1.jpg" alt="Kvanar Project 1"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">1</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-long-bay-beach-img-2.jpg" alt="Kvanar Project 2"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">2</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-long-bay-beach-img-3.jpg" alt="Kvanar Project 3"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">3</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-long-bay-beach-img-4.jpg" alt="Kvanar Project 4"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">4</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-long-bay-beach-villa-1-img-1.jpg" alt="Kvanar Project 5"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">5</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-long-bay-beach-villa-2-img-1.jpg" alt="Kvanar Project 6"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">6</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-long-bay-beach-villa-3-img-1.jpg" alt="Kvanar Project 7"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">7</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-seaclusion-img-1.jpg" alt="Kvanar Project 8"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">8</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-seaclusion-img-2.jpg" alt="Kvanar Project 9"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">9</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-seaclusion-img-3.jpg" alt="Kvanar Project 10"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">10</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-seaclusion-img-4.jpg" alt="Kvanar Project 11"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">11</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-seaclusion-img-5.jpg" alt="Kvanar Project 12"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">12</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-seaclusion-img-6.jpg" alt="Kvanar Project 13"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">13</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-seaclusion-img-7.jpg" alt="Kvanar Project 14"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">14</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-sentosa-img-1.jpeg" alt="Kvanar Project 15"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">15</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-sentosa-img-2.jpeg" alt="Kvanar Project 16"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">16</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="row">
-                        <div class="col-12">
-                            <img class="rounded-4" src="/custom/projects/projects-sentosa-img-3.jpeg" alt="Kvanar Project 17"/>
-                        </div>
-                        <div class="col-12" style="text-align: left;">
-                            <div class="h5 pt-4 pb-2 kvanar-text-orange">17</div>
-                            <p>Kvanar Project</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide">
-                    <div class="display-1"><a href="/test-projects.html">View All Projects</a></div>
-                </div>
+    <div class="row mb-3 row-cols-1 row-cols-md-3 g-4">
+        <div class="col" v-for="(project, key) in projects" data-aos="fade-up" data-aos-duration="1300">
+            <div class="kv-image-container kv-vh-50 image-gallery rounded-4 kv-im"  v-bind:style="'background-image: url(\'/custom/projects/' + project.img +  '\');'">
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination swiper-pagination-bullet-gray"></div>
+            <div class="py-3 fs-5"><a class="kv-link" v-bind:href="'/project.html?pid=' + project.pid" target="_blank">{{project.name}}</a></div>
+        </div>
+    </div>
+    <div class="row mb-5">
+        <div class="col-12 text-center">
+            <a class="btn kv-btn-flat btn-lg my-3 card-services-active rounded-5 px-5 fw-semibold fs-6 text-uppercase" href="/projects.html">
+                View All Projects
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="12" fill="currentColor" class="bi bi-arrow-right" viewBox="10 9.5 20 16">
+                    <path fill-rule="evenodd" d="M22,9a1,1,0,0,0,0,1.42l4.6,4.6H3.06a1,1,0,1,0,0,2H26.58L22,21.59A1,1,0,0,0,22,23a1,1,0,0,0,1.41,0l6.36-6.36a.88.88,0,0,0,0-1.27L23.42,9A1,1,0,0,0,22,9Z"/>
+                </svg>
+            </a>
         </div>
     </div>
 </div>
+
+
+
+<div class="py-5"></div>
 
 <!-- FOOTER -->
 <div id="footer" class="container-fluid kvanar-bg-gray pt-3 pb-3">
@@ -618,6 +454,7 @@
 <script src="/custom/js/glightbox.min.js"></script>
 <script src="/custom/js/slick.js"></script>
 <script>
+    /* Services Array */
     const servicesArray = {
         1 : { name : 'Design and Build', description : 'To provide you with tailored, bespoke designs and bring your dream homes to reality, Kvanar Contracting are exclusively partnered with award-winning architect, Ron Shaw as Kvanar Design and Build, design by Ron Shaw.' },
         2 : { name : 'General Contractors', description : 'Whether you prefer your dream homes (or any project) designed by Ron Shaw or any designer of your choosing, Kvanar Contracting can provide standard construction services. We have highly skilled personnel that can get your projects done on schedule meeting your expectations and with quality workmanship.' },
@@ -627,12 +464,24 @@
         6 : { name : 'Importing and Shipping of Personal Effects', description : 'Kvanar Contracting offers importation and shipment of personal effects to your chosen destination in the Turks and Caicos Islands. We ensure all personal effects are transported and shifted safely and secured.' }
     };
 
+    /* Vue App */
     const  { createApp } = Vue;
     const app1 = createApp({ data() {return {kvServices : servicesArray}} });
     const app2 = createApp({ data() {return {kvServices : servicesArray}} });
-
     app1.mount("#kvServicesBigScreenVue");
     app2.mount("#kvServicesSmallScreenVue");
+
+    /* Featured Projects Array */
+    const featuredProjects = {
+        1: { pid: 2, name: 'Seascape - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : 'seascape-1.jpg'},
+        2: { pid: 3, name: 'Sentosa - Main Villa', client: 'Sentosa II', location: 'Leeward, Providenciales, TCI, BWI', area: '5,000 sf', date: 'July 2017', status: 'Complete', img : 'sentosa-1.jpg'},
+        3: { pid: 5, name: 'Hyperion - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-hyperion-2.jpg'},
+        4: { pid: 6, name: 'Eos & Helios - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-eos-1.jpg'},
+        5: { pid: 9, name: 'Seaclusion - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : 'seaclusion-1.jpg'},
+    }
+    const app3 = createApp({ data() {return {projects : featuredProjects}} });
+    app3.mount("#ourProjects");
+
 </script>
 </body>
 </html>

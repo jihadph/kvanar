@@ -355,10 +355,6 @@
     opacity: 1;
 }
 
-.kvanar-fixed-image-contact {
-    background: url('/custom/img/kvanar-team-dark.jpg') no-repeat fixed center center ;
-    background-size: cover;
-}
 .kvanar-fixed-image {
     background: no-repeat fixed center center;
     background-size: cover;

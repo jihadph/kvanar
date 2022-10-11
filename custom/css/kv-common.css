@@ -4,6 +4,37 @@
 .kv-bg-pink {background-color: pink;}
 .kv-bg-gray {background-color: #545454;}
 
+/* Background Image Pan On Hover
+ * Pan the background image from left to right on mouse hover
+ */
+.kv-bg-pan-hover {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    transition: 0.7s!important;
+}
+.kv-bg-pan-hover:hover {
+    background-position: right;
+}
+
+/* Background Image
+ */
+.kv-image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* Background Image */
+.kv-image-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.kv-image-fixed {
+    background-attachment: fixed;
+}
+
 /* Font Family */
 .kv-font-noto {
     font-family: 'Noto Serif HK', sans-serif;
@@ -43,7 +74,6 @@
 .kv-vh-85max {max-height: 85vh!important;}
 
 .kv-vh-inherit {min-height: inherit!important;}
-
 
 /* Links */
 a.kv-link {
