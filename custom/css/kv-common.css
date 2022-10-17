@@ -35,6 +35,12 @@
     background-attachment: fixed;
 }
 
+/* Border */
+.kv-border-light {border: 1px solid #545454;}
+
+/* Font Color */
+.kv-text-orange {color: #fe6600;}
+
 /* Font Family */
 .kv-font-noto {
     font-family: 'Noto Serif HK', sans-serif;
