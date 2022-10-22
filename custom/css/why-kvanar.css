@@ -1,25 +1,4 @@
 /* CORE */
-html,
-body {
-    position: relative;
-    height: 100%;
-}
-
-/* SWIPER */
-.swiper {
-    width: 100%;
-    height: 100%;
-}
-
-.swiper-slide {
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* SLIDE SPECIFIC */
 .why-kvanar-first-slide {
@@ -43,25 +22,34 @@ body {
 .why-kvanar-image-5,
 .why-kvanar-image-6
 {
+    background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center center;
 }
 .why-kvanar-image-1 {
-    background-image: url('/custom/img/why-kvanar/why-kvanar-long-bay-beach.jpg');
+    background-image: url('/custom/img/why-kvanar/pexels-ivan-samkov-8962801.jpg');
 }
 .why-kvanar-image-2 {
-    background-image: url('/custom/img/why-kvanar/client.jpg');
+    background-image: url('/custom/img/why-kvanar/pexels-alena-darmel-7642113.jpg');
 }
 .why-kvanar-image-3 {
-    background-image: url('/custom/img/why-kvanar/pexels-1.jpg');
+    background-image: url('/custom/img/why-kvanar/pexels-mikael-blomkvist-6476190.jpg');
 }
 .why-kvanar-image-4 {
     background-image: url('/custom/img/why-kvanar/pexels-2.jpg');
 }
 .why-kvanar-image-5 {
-    background-image: url('/custom/img/why-kvanar/pexels-3.jpg');
+    background-image: url('/custom/img/why-kvanar/pexels-los-muertos-crew-8853470.jpg');
 }
 .why-kvanar-image-6 {
     background-image: url('/custom/img/why-kvanar/pexels-4.jpg');
+}
+
+.why-kv-icons .bi {
+    width: 1em!important;
+    height: 1em!important;
+}
+.bi {
+    display: inline-block;
+    vertical-align: -0.125em;
 }

@@ -70,6 +70,7 @@
 .kv-vh-70 {height: 70vh!important;}
 .kv-vh-75 {height: 75vh!important;}
 .kv-vh-85 {height: 85vh!important;}
+.kv-vh-100 {height: 100vh!important;}
 
 .kv-vh-25max {max-height: 25vh!important;}
 .kv-vh-35max {max-height: 35vh!important;}
@@ -88,4 +89,11 @@ a.kv-link {
 }
 a.kv-link:hover {
     color: #4da6ff;
+}
+a.kv-link-dark {
+    text-decoration: none;
+    color: #6c757d;
+}
+a.kv-link-dark:hover {
+    color: #fe6600;
 }
