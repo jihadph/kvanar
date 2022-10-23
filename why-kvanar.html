@@ -35,6 +35,7 @@
 
     <!-- Custom CSS -->
     <link href="/custom/css/kv-common.css" rel="stylesheet">
+    <link href="/custom/css/style.css" rel="stylesheet">
     <link href="/custom/css/why-kvanar.css" rel="stylesheet">
     <link href="/custom/css/quote.css" rel="stylesheet">
     <link href="/custom/css/kvanar-animation.css" rel="stylesheet">
@@ -43,17 +44,21 @@
     <script src="/custom/js/jQuery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="/custom/js/why-kvanar.js"></script>
+    <script src="/custom/js/vanilla.js"></script>
 </head>
 
 <body style="color: black;">
 
+<!-- HEADER -->
+<div id="typicalHeader"></div>
+
 <!-- Slide 1 -->
 <div class="container-fluid">
     <div class="row why-kvanar-first-slide kv-vh-100">
-        <div class="col-12 kv-vh-70max">
+        <div class="col-12 kv-vh-80max">
             <div class="container">
-                <div class="row kv-vh-70 align-content-center">
-                    <div class="col-12">
+                <div class="row kv-vh-80 align-content-end">
+                    <div class="col-12 pb-md-5 mb-md-5 mb-3">
                         <div class="display-2 fw-bold kv-font-noto py-4">Why Kvanar?</div>
                         <div class="fs-4 py-4">
                             Kvanar Contracting was formed to meet the demands of the growing contracting
@@ -70,7 +75,7 @@
 </div>
 
 <!-- Slide 2 -->
-<div class="container-fluid mb-5">
+<div class="container-fluid mb-5" id="OnScrollSection">
     <div class="row why-kvanar-second-slide align-content-end kv-vh-100">
         <div class="col-12 kv-vh-25min kv-bg-white py-3">
             <div class="container kv-vh-inherit">
@@ -97,15 +102,6 @@
                 first-class service and a responsible approach to the environment</span>.
                 With a goal of customer-focused attitude throughout the business, we designed our operations,
                 products and services to meet and exceed the requirements of our customers.
-                <div class="fs-6 fw-light why-kv-icons py-3">
-                    <a class="kv-link-dark" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                        Back to Home
-                    </a>
-                </div>
             </div>
         </div>
         <div class="col-md-6 col-12 px-4" data-aos="fade-right" data-aos-duration="1300">
@@ -126,15 +122,6 @@
                 In Kvanar Contracting, we combine excellent project management with value for money.
                 Our design, build, and management processes are intended to encourage clear and open
                 communication and ensure your project is as simple and painless as possible.
-                <div class="fs-6 fw-light why-kv-icons py-3">
-                    <a class="kv-link-dark" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                        Back to Home
-                    </a>
-                </div>
             </div>
         </div>
     </div>
@@ -152,15 +139,6 @@
                 Honesty and Trust, Innovation, Exceeding Customer Satisfaction and Expectations, Teamwork,
                 Great Competitive People, and Leadership and Professionalism. Teamwork and co-operation
                 from all levels result in delivering an outstanding service to our clients.
-                <div class="fs-6 fw-light why-kv-icons py-3">
-                    <a class="kv-link-dark" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                        Back to Home
-                    </a>
-                </div>
             </div>
         </div>
         <div class="col-md-6 col-12 px-4" data-aos="fade-up" data-aos-duration="1300">
@@ -170,7 +148,7 @@
 </div>
 
 <!-- Slide 6 -->
-<div class="container">
+<div class="container mb-5">
     <div class="row align-items-center py-5">
         <div class="col-md-5 col-12 px-4 order-md-1 order-2" data-aos="fade-up" data-aos-duration="1300">
             <div class="kv-vh-75 why-kvanar-image-5 rounded-4"></div>
@@ -188,26 +166,21 @@
                 <p>By providing protection to our employees, property, the public realm and the environment,
                     we ensure that every project we undertake will result in their efficient and successful completion.
                 </p>
-                <div class="fs-6 fw-light why-kv-icons py-3">
-                    <a class="kv-link-dark" href="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
-                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
-                        </svg>
-                        Back to Home
-                    </a>
-                </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Scripts -->
+<!-- FOOTER -->
+<div id="typicalFooter"></div>
+
+<!-- SCRIPTS -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
 <script src="/custom/js/swiper-bundle.min.js"></script>
 <script src="/custom/js/aos.js"></script>
 <script src="/custom/js/glightbox.min.js"></script>
 <script src="/custom/js/slick.js"></script>
+<script src="/custom/js/common-includes.js"></script>
 </body>
 </html>
