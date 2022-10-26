@@ -59,7 +59,7 @@
 
 <!-- SECTION 2 PROJECT -->
 <!-- Details and Gallery -->
-<div id="projectGallery" class="container">
+<div id="projectGallery" class="container mb-5">
 
     <!-- Project Details -->
     <div class="row mb-5">
@@ -98,9 +98,9 @@
         <div class="col glightbox3" v-for="(value, key) in project.photos" >
             <a v-bind:href="project.directory + project.photoLabel + key +  '.jpg'" class="glightbox" data-gallery="gallery">
                 <div class="gallery-thumb">
-                    <div class="image-container kv-vh-40 image-gallery"  v-bind:style="'background-image: url(\'' + project.directory + project.photoLabel + key +  '.jpg\');'">
+                    <div class="kv-image-container kv-vh-40 image-gallery rounded-4"  v-bind:style="'background-image: url(\'' + project.directory + project.photoLabel + key +  '.jpg\');'">
                     </div>
-                    <div class="gallery-caption fs-6 fw-semibold">{{ project.label }} {{ ' - ' + value }}</div>
+                    <div class="gallery-caption fs-6 fw-semibold rounded-4">{{ project.label }} {{ ' - ' + value }}</div>
                 </div>
             </a>
         </div>
@@ -109,8 +109,7 @@
 </div>
 
 <!-- DUMMY SECTIONS -->
-<div class="py-5"></div>
-<div class="py-5"></div>
+<div class="py-3"></div>
 
 <!-- FOOTER -->
 <div id="typicalFooter"></div>
@@ -174,123 +173,6 @@
                 }
             },
             3 : {
-                name: 'Sentosa - Main Villa',
-                label: 'Sentosa',
-                client: 'Sentosa II',
-                location: 'Leeward, Providenciales, TCI, BWI',
-                area: '5,000 sf',
-                date: 'July 2017',
-                status: 'Complete',
-                photoQty: 7,
-                photoLabel: 'sentosa-',
-                directory: '/custom/projects/sentosa/',
-                photos: {
-                    1 : 'Pool Area',
-                    2 : 'Living Room',
-                    3 : 'Master\'s Bedroom',
-                    4 : 'Living Area',
-                    5 : 'Bathroom',
-                    6 : 'Outdoor Bath Area',
-                    7 : 'Relaxation Area',
-                }
-            },
-            4 : {
-                name: 'The Dunes - Villa Development (Phase 2)',
-                label: 'Dunes',
-                client: 'The Dunes Development',
-                location: 'Turtle Cove, Providenciales, TCI, BWI',
-                area: '4,700 sf',
-                date: 'February 2017',
-                status: 'Complete',
-                photoQty: 0,
-                photoLabel: 'dunes-',
-                directory: '/custom/projects/dunes/',
-                photos: {}
-            },
-            5 : {
-                name: 'Hyperion Villa - Long Bay Beach Club',
-                label: 'Hyperion Villa',
-                client: 'Long Bay Beach Club',
-                location: 'Long Bay, Providenciales, TCI, BWI',
-                area: '13,000 sf',
-                date: 'February 2017',
-                status: 'Complete',
-                photoQty: 15,
-                photoLabel: 'LBBC-hyperion-',
-                directory: '/custom/projects/LBBC-hyperion/',
-                photos: {
-                    1 : 'Beach Side',
-                    2 : 'Beach Side',
-                    3 : 'Front Side',
-                    4 : 'Beach View',
-                    5 : 'Living Room',
-                    6 : 'Living Room',
-                    7 : 'Outdoor Dine Area',
-                    8 : 'Kitchen',
-                    9 : 'Family Room',
-                    10 : 'Bedroom with Beach View',
-                    11 : 'Bedroom',
-                    12 : 'Bedroom',
-                    13 : 'Bedroom',
-                    14 : 'Bathroom',
-                    15 : 'Bathroom',
-                }
-            },
-            6 : {
-                name: 'Eos & Helios Villa - Long Bay Beach Club',
-                label: 'Eos & Helios Villa',
-                client: 'Long Bay Beach Club',
-                location: 'Long Bay, Providenciales, TCI, BWI',
-                area: '13,000 sf',
-                date: 'February 2017',
-                status: 'Complete',
-                photoQty: 14,
-                photoLabel: 'LBBC-eos-',
-                directory: '/custom/projects/LBBC-eos/',
-                photos: {
-                    1 : 'Beach Side with Pool',
-                    2 : 'Front Side',
-                    3 : 'Living Room',
-                    4 : 'Family Room',
-                    5 : 'Dining Area and Kitchen',
-                    6 : 'Kitchen',
-                    7 : 'Dining Area',
-                    8 : 'Outdoor Area',
-                    9 : 'Outdoor Area',
-                    10 : 'Bedroom with Beach View',
-                    11 : 'Bedroom with Beach View',
-                    12 : 'Bedroom',
-                    13 : 'Bedroom',
-                    14 : 'Bedroom',
-                }
-            },
-            7 : {
-                name: 'The Shore Club - Tunnels and Swimming Pools',
-                label: 'The Shore Club',
-                client: 'The Shore Club',
-                location: 'Long Bay, Providenciales, TCI, BWI',
-                area: 'NA',
-                date: 'August 2016',
-                status: 'Complete',
-                photoQty: 0,
-                photoLabel: 'shore-club-',
-                directory: '/custom/projects/shore-club/',
-                photos: {}
-            },
-            8 : {
-                name: 'Bajacu - Villa Renovation & Extension Works',
-                label: 'Bajacu',
-                client: 'Bajacu',
-                location: 'Ocean Drive, Providenciales, TCI, BWI',
-                area: 'NA',
-                date: 'November 2015',
-                status: 'Complete',
-                photoQty: 0,
-                photoLabel: 'bajacu-',
-                directory: '/custom/projects/bajacu/',
-                photos: {}
-            },
-            9 : {
                 name: 'Seaclusion - Villa Development',
                 label: 'Seaclusion',
                 client: 'Seascape & Seaclusion',
@@ -329,6 +211,123 @@
                     25: 'Bathroom',
                     26: 'Outdoor Dine Area',
                 }
+            },
+            4 : {
+                name: 'Sentosa - Main Villa',
+                label: 'Sentosa',
+                client: 'Sentosa II',
+                location: 'Leeward, Providenciales, TCI, BWI',
+                area: '5,000 sf',
+                date: 'July 2017',
+                status: 'Complete',
+                photoQty: 7,
+                photoLabel: 'sentosa-',
+                directory: '/custom/projects/sentosa/',
+                photos: {
+                    1 : 'Pool Area',
+                    2 : 'Living Room',
+                    3 : 'Master\'s Bedroom',
+                    4 : 'Living Area',
+                    5 : 'Bathroom',
+                    6 : 'Outdoor Bath Area',
+                    7 : 'Relaxation Area',
+                }
+            },
+            5 : {
+                name: 'The Dunes - Villa Development (Phase 2)',
+                label: 'Dunes',
+                client: 'The Dunes Development',
+                location: 'Turtle Cove, Providenciales, TCI, BWI',
+                area: '4,700 sf',
+                date: 'February 2017',
+                status: 'Complete',
+                photoQty: 0,
+                photoLabel: 'dunes-',
+                directory: '/custom/projects/dunes/',
+                photos: {}
+            },
+            6 : {
+                name: 'Hyperion Villa - Long Bay Beach Club',
+                label: 'Hyperion Villa',
+                client: 'Long Bay Beach Club',
+                location: 'Long Bay, Providenciales, TCI, BWI',
+                area: '13,000 sf',
+                date: 'February 2017',
+                status: 'Complete',
+                photoQty: 15,
+                photoLabel: 'LBBC-hyperion-',
+                directory: '/custom/projects/LBBC-hyperion/',
+                photos: {
+                    1 : 'Beach Side',
+                    2 : 'Beach Side',
+                    3 : 'Front Side',
+                    4 : 'Beach View',
+                    5 : 'Living Room',
+                    6 : 'Living Room',
+                    7 : 'Outdoor Dine Area',
+                    8 : 'Kitchen',
+                    9 : 'Family Room',
+                    10 : 'Bedroom with Beach View',
+                    11 : 'Bedroom',
+                    12 : 'Bedroom',
+                    13 : 'Bedroom',
+                    14 : 'Bathroom',
+                    15 : 'Bathroom',
+                }
+            },
+            7 : {
+                name: 'Eos & Helios Villa - Long Bay Beach Club',
+                label: 'Eos & Helios Villa',
+                client: 'Long Bay Beach Club',
+                location: 'Long Bay, Providenciales, TCI, BWI',
+                area: '13,000 sf',
+                date: 'February 2017',
+                status: 'Complete',
+                photoQty: 14,
+                photoLabel: 'LBBC-eos-',
+                directory: '/custom/projects/LBBC-eos/',
+                photos: {
+                    1 : 'Beach Side with Pool',
+                    2 : 'Front Side',
+                    3 : 'Living Room',
+                    4 : 'Family Room',
+                    5 : 'Dining Area and Kitchen',
+                    6 : 'Kitchen',
+                    7 : 'Dining Area',
+                    8 : 'Outdoor Area',
+                    9 : 'Outdoor Area',
+                    10 : 'Bedroom with Beach View',
+                    11 : 'Bedroom with Beach View',
+                    12 : 'Bedroom',
+                    13 : 'Bedroom',
+                    14 : 'Bedroom',
+                }
+            },
+            8 : {
+                name: 'The Shore Club - Tunnels and Swimming Pools',
+                label: 'The Shore Club',
+                client: 'The Shore Club',
+                location: 'Long Bay, Providenciales, TCI, BWI',
+                area: 'NA',
+                date: 'August 2016',
+                status: 'Complete',
+                photoQty: 0,
+                photoLabel: 'shore-club-',
+                directory: '/custom/projects/shore-club/',
+                photos: {}
+            },
+            9 : {
+                name: 'Bajacu - Villa Renovation & Extension Works',
+                label: 'Bajacu',
+                client: 'Bajacu',
+                location: 'Ocean Drive, Providenciales, TCI, BWI',
+                area: 'NA',
+                date: 'November 2015',
+                status: 'Complete',
+                photoQty: 0,
+                photoLabel: 'bajacu-',
+                directory: '/custom/projects/bajacu/',
+                photos: {}
             },
         }
 
@@ -370,42 +369,6 @@
                 }
             }).mount('#projectGallery');
         }
-
-        /* Swiper Setup */
-        const kv_swiper = new Swiper('.kv-swiper-first', {
-            // Optional parameters
-            slidesPerView: 1,
-            direction: 'horizontal',
-            loop: true,
-            effect: 'slide',
-            grabCursor: true,
-            speed: 700,
-            preloadImages: true,
-            simulateTouch: true,
-            updateOnWindowResize: true,
-
-            // Keyboard Control
-            keyboard: {
-                enabled: true,
-            },
-
-            // If we need pagination
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true
-            },
-
-            // Navigation Arrows
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-
-            /*autoplay: {
-                delay: 4000
-            },*/
-        });
-
         /* Lightbox */
         const lightbox = GLightbox({
             touchNavigation: true,

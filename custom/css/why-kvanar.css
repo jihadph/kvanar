@@ -1,17 +1,11 @@
 /* CORE */
 
 /* SLIDE SPECIFIC */
-.why-kvanar-first-slide {
-    background-image: url('/custom/img/why-kvanar/why-kvanar-cropped.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center 80vh;
-}
 .why-kvanar-second-slide {
     background-image: url('/custom/img/why-kvanar/why-kvanar-cropped.jpg');
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center -30vh;
+    background-size: cover;
+    background-position: center;
 }
 
 /* REMAINING SLIDE */

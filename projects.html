@@ -67,52 +67,51 @@
 <div id="OnScrollSection"></div>
 
 <!-- SECTION 2 PROJECTS SUMMARY -->
-<div class="container mb-5">
-    <!-- Project 1-->
-    <div id="projects">
-        <div class="row rounded-4 mb-5" v-for="(project, key) in projects">
-            <div class="col-lg-6 col-12">
-                <div class="row align-items-center">
+<div id="projects" class="container mb-5">
 
-                    <!--Image Holder -->
-                    <div v-if="project.img !== ''">
-                        <div class="kv-vh-50 kv-image m-auto rounded-4" v-bind:style="'background-image: url(\'/custom/projects/' + project.img + '\');'">
-                        </div>
-                    </div>
-                    <div v-else>
-                        <div class="kv-vh-50 kv-image m-auto rounded-4" style="background-image: url('/custom/img/photo_placeholder.jpg');">
-                        </div>
-                    </div>
+    <div class="row mb-5" v-for="(project, key) in projects">
+        <div class="col-lg-6 col-12 mb-4">
+            <div class="row align-items-center">
 
+                <!--Image Holder -->
+                <div v-if="project.img !== ''">
+                    <div class="kv-vh-50 kv-image m-auto rounded-4" v-bind:style="'background-image: url(\'/custom/projects/' + project.img + '\');'">
+                    </div>
                 </div>
+                <div v-else>
+                    <div class="kv-vh-50 kv-image m-auto rounded-4" style="background-image: url('/custom/img/photo_placeholder.jpg');">
+                    </div>
+                </div>
+
             </div>
-            <div class="col-lg-6 col-12">
-                <div class="row p-md-4 p-3">
-                    <div class="col-12 kvanar-text-orange">
-                        <div class="display-6 fw-semibold">
-                            <span v-if="project.active === true"><a class="kv-link" v-bind:href="'/project.html?pid='+key">{{project.project}}</a></span>
-                            <span v-else>{{project.project}}</span>
-                        </div>
-                    </div>
-                    <div class="col-12 py-4"></div>
-                    <div class="col-md-4 h5">Client:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.client}}</div>
-                    <div class="col-12 py-1"></div>
-                    <div class="col-md-4 h5">Location:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.location}}</div>
-                    <div class="col-12 py-1"></div>
-                    <div class="col-md-4 h5">Built-up Area:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.area}}</div>
-                    <div class="col-12 py-1"></div>
-                    <div class="col-md-4 h5">Completed On:</div>
-                    <div class="col-md-8 h5 fw-bold">{{project.date}}</div>
+        </div>
+        <div class="col-lg-6 col-12 border-bottom border-1">
+            <div class="row px-md-4 px-0">
+                <div class="col-12 display-6 fw-semibold kv-text-orange mb-md-4 mb-3">
+                        <span v-if="project.active === true">
+                            <a class="kv-link" v-bind:href="'/project.html?pid='+key">{{project.project}}</a>
+                        </span>
+                    <span v-else>{{project.project}}</span>
                 </div>
+
+                <div class="col-md-4 fs-5 mb-md-2 mb-0">Client:</div>
+                <div class="col-md-8 fs-4 fw-semibold mb-2">{{project.client}}</div>
+
+                <div class="col-md-4 fs-5 mb-md-2 mb-0">Location:</div>
+                <div class="col-md-8 fs-4 fw-semibold mb-2">{{project.location}}</div>
+
+                <div class="col-md-4 fs-5 mb-md-2 mb-0">Built-up Area:</div>
+                <div class="col-md-8 fs-4 fw-semibold mb-2">{{project.area}}</div>
+
+                <div class="col-md-4 fs-5 mb-md-2 mb-0">Completed On:</div>
+                <div class="col-md-8 fs-4 fw-semibold mb-2">{{project.date}}</div>
             </div>
         </div>
     </div>
 
 </div>
 
+<!-- DUMMY SECTION -->
 <div class="py-3"></div>
 
 <!-- FOOTER -->
@@ -133,13 +132,13 @@
                 projects : {
                     1: { active: false, project: 'Drake Developments - Villa Development', client: 'DRAKE Development', location: 'Leeward, Providenciales, TCI, BWI', area: '5,400 sf', date: 'February 2021', status: 'Complete', img : ''},
                     2: { active: true, project: 'Seascape - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : 'seascape-1.jpg'},
-                    3: { active: true, project: 'Sentosa - Main Villa', client: 'Sentosa II', location: 'Leeward, Providenciales, TCI, BWI', area: '5,000 sf', date: 'July 2017', status: 'Complete', img : 'sentosa-1.jpg'},
-                    4: { active: false, project: 'The Dunes - Villa Development (Phase 2)', client: 'The Dunes Development', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '4,700 sf', date: 'February 2017', status: 'Complete', img : ''},
-                    5: { active: true, project: 'Hyperion - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-hyperion-2.jpg'},
-                    6: { active: true, project: 'Eos & Helios - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-eos-1.jpg'},
-                    7: { active: false, project: 'The Shore Club - Tunnels and Swimming Pools', client: 'The Shore Club', location: 'Long Bay, Providenciales, TCI, BWI', area: 'na', date: 'August 2016', status: 'Complete', img : ''},
-                    8: { active: false, project: 'Bajacu - Villa Renovation & Extension Works', client: 'Bajacu ', location: 'Ocean Drive, Providenciales, TCI, BWI', area: 'na', date: 'November 2015', status: 'Complete', img : ''},
-                    9: { active: true, project: 'Seaclusion - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : 'seaclusion-1.jpg'},
+                    3: { active: true, project: 'Seaclusion - Villa Development', client: 'Seascape & Seaclusion', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '12,000 sf', date: 'July 2019', status: 'Complete', img : 'seaclusion-1.jpg'},
+                    4: { active: true, project: 'Sentosa - Main Villa', client: 'Sentosa II', location: 'Leeward, Providenciales, TCI, BWI', area: '5,000 sf', date: 'July 2017', status: 'Complete', img : 'sentosa-1.jpg'},
+                    5: { active: false, project: 'The Dunes - Villa Development (Phase 2)', client: 'The Dunes Development', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '4,700 sf', date: 'February 2017', status: 'Complete', img : ''},
+                    6: { active: true, project: 'Hyperion - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-hyperion-2.jpg'},
+                    7: { active: true, project: 'Eos & Helios - Long Bay Beach Club, Villa Development', client: 'Long Bay Beach Club', location: 'Long Bay, Providenciales, TCI, BWI', area: '13,000 sf', date: 'February 2017', status: 'Complete', img : 'LBBC-eos-1.jpg'},
+                    8: { active: false, project: 'The Shore Club - Tunnels and Swimming Pools', client: 'The Shore Club', location: 'Long Bay, Providenciales, TCI, BWI', area: 'na', date: 'August 2016', status: 'Complete', img : ''},
+                    9: { active: false, project: 'Bajacu - Villa Renovation & Extension Works', client: 'Bajacu ', location: 'Ocean Drive, Providenciales, TCI, BWI', area: 'na', date: 'November 2015', status: 'Complete', img : ''},
                 }
             }
         }
