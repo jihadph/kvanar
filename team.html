@@ -85,8 +85,7 @@
                                 </a>
                             </div>
                             <div class="fs-6 fw-semibold kvanar-text-orange mb-3">{{member.position}}</div>
-                            <p class="card-text">
-                                "Good buildings come from good people, and all problems are solved by good design."                            </p>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
@@ -102,7 +101,7 @@
                             <h5 class="modal-title" id="exampleModalLabel">{{member.name}}</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
-                        <div class="modal-body p-md-5 py-5 px-3">
+                        <div class="modal-body p-md-4 py-4 px-3">
                             <div class="container">
                                 <div class="row g-5 mb-5">
                                     <div class="col-lg-3 col-12">
@@ -113,17 +112,17 @@
                                         <div class="display-6">{{member.position}}</div>
                                     </div>
                                 </div>
-                                <div class="row g-5 py-5" v-if="member.experience.length > 0">
-                                    <div class="col-lg-3 col-12"><span class="h4">Experience</span></div>
-                                    <div class="col-lg-9 col-12"><span class="fs-4">{{member.experience}}</span></div>
+                                <div class="row g-3 py-3" v-if="member.experience.length > 0">
+                                    <div class="col-lg-3 col-12"><span class="h5">Experience</span></div>
+                                    <div class="col-lg-9 col-12"><span class="fs-5">{{member.experience}}</span></div>
                                 </div>
-                                <div class="row g-5 py-5" v-if="member.role.length > 0">
-                                    <div class="col-lg-3 col-12"><span class="h4">Role</span></div>
-                                    <div class="col-lg-9 col-12"><span class="fs-4">{{member.role}}</span></div>
+                                <div class="row g-3 py-3" v-if="member.role.length > 0">
+                                    <div class="col-lg-3 col-12"><span class="h5">Role</span></div>
+                                    <div class="col-lg-9 col-12"><span class="fs-5">{{member.role}}</span></div>
                                 </div>
-                                <div class="row g-5 py-5" v-if="member.qualification.length > 0">
-                                    <div class="col-lg-3 col-12"><span class="h4">Qualifications</span></div>
-                                    <div class="col-lg-9 col-12"><span class="fs-4">{{member.qualification}}</span></div>
+                                <div class="row g-3 py-3" v-if="member.qualification.length > 0">
+                                    <div class="col-lg-3 col-12"><span class="h5">Qualifications</span></div>
+                                    <div class="col-lg-9 col-12"><span class="fs-5">{{member.qualification}}</span></div>
                                 </div>
                             </div>
                         </div>
@@ -158,8 +157,8 @@
             return {
                 kvTeam : {
                     1: {name: 'Christopher Haggie', position: 'Managing Director', img: 'KV-Chris.jpg', experience: '23 years of experience', role: 'Management of all Kvanar Business Activities.', qualification: 'BSc (Hons) Construction Engineering ManagementAssociate Member of the Chartered Institute of Building (ACIOB)'},
-                    2: {name: 'Randy Howell', position: 'Major Projects Bid Leader & Contracts Manager', img: 'KV-Randy.jpg', experience: '24 years of experience', role: 'Daily management and overseeing all live projects, including controlling budgets, negotiation and management of subcontracts, procurement of materials & supplies locally, co-ordination of bi-weekly evaluation of subcontract packages.', qualification: 'Construction Project Management - Certificate,  Construction Scheduling - Certificate, Construction Cost Estimating & Control - Certificate, Construction Finance - Certificate'},
-                    3: {name: 'Andrew Henry', position: 'Business Development & Tendering Manager', img: 'KV-Andrew.jpg', experience: '30 years of experience', role: 'Managing all Business Development, Tendering and Estimating functions within the company together with overseeing the cost control of live projects to ensure that projects meet the budget.', qualification: 'Incorporate Member of the Chartered Institute of Building (ICIOB)'},
+                    2: {name: 'Andrew Henry', position: 'Business Development & Tendering Manager', img: 'KV-Andrew.jpg', experience: '30 years of experience', role: 'Managing all Business Development, Tendering and Estimating functions within the company together with overseeing the cost control of live projects to ensure that projects meet the budget.', qualification: 'Incorporate Member of the Chartered Institute of Building (ICIOB)'},
+                    3: {name: 'Mario Forbes', position: 'Contracts Manager', img: 'KV-male.jpg', experience: '', role: 'Daily management and overseeing all live projects, including controlling budgets, negotiation and management of subcontracts, procurement of materials & supplies locally, co-ordination of bi-weekly evaluation of subcontract packages.', qualification: 'Construction Project Management'},
                     4: {name: 'MarieClaude Bourgie', position: 'International Procurement & Buying', img: 'KV-MC.jpg', experience: '20 years of experience', role: 'Managing all purchases of construction material, inventories, material schedules, change of orders & shipping logistics.', qualification: 'Accreditation Certificates of Canadian Construction Association'},
                     5: {name: 'Richard Scott', position: 'Project Manager', img: 'KV-Richard.jpg', experience: '30 years of experience', role: 'Senior Project Manager liasing directly between Client and company, supervising all management and site operational actvities, monitoring build and project progress, ensuring quality and safety at all time in the satisfactory delivery of the project from start to finish.', qualification: ''},
                     6: {name: 'Marvin Manalo', position: 'Structural & Finishes Foreman\n', img: 'KV-Marvin.jpg', experience: '25 years of experience', role: 'Supervision of structural frame construction  and finish elements, including but not limited to setting out, QA/QC, works packages planning and logistics, measurement, scheduling delivery of materials, QA, safety file, daily records, sourcing labour and plant, managing and liaising with subcontractors, and co-ordinating local material deliveries.', qualification: 'Time Served Finishing Carpenter'},

@@ -88,9 +88,9 @@
         <div class="col-lg-6 col-12 border-bottom border-1">
             <div class="row px-md-4 px-0">
                 <div class="col-12 display-6 fw-semibold kv-text-orange mb-md-4 mb-3">
-                        <span v-if="project.active === true">
-                            <a class="kv-link" v-bind:href="'/project.html?pid='+key">{{project.project}}</a>
-                        </span>
+                    <span v-if="project.active === true">
+                        <a class="kv-link" v-bind:href="'/project.html?pid='+key">{{project.project}}</a>
+                    </span>
                     <span v-else>{{project.project}}</span>
                 </div>
 
@@ -103,8 +103,13 @@
                 <div class="col-md-4 fs-5 mb-md-2 mb-0">Built-up Area:</div>
                 <div class="col-md-8 fs-4 fw-semibold mb-2">{{project.area}}</div>
 
-                <div class="col-md-4 fs-5 mb-md-2 mb-0">Completed On:</div>
-                <div class="col-md-8 fs-4 fw-semibold mb-2">{{project.date}}</div>
+                <div class="col-md-4 fs-5 mb-md-2 mb-0">Completion:</div>
+                <div class="col-md-8 fs-4 fw-semibold mb-2">
+                    <span v-if="project.status === 'On-going'">
+                        On-going
+                    </span>
+                    <span v-else>{{project.date}}</span>
+                </div>
             </div>
         </div>
     </div>
@@ -139,6 +144,29 @@
                     8: { active: false, project: 'The Shore Club - Tunnels and Swimming Pools', client: 'The Shore Club', location: 'Long Bay, Providenciales, TCI, BWI', area: 'na', date: 'August 2016', status: 'Complete', img : ''},
                     9: { active: false, project: 'Bajacu - Villa Renovation & Extension Works', client: 'Bajacu ', location: 'Ocean Drive, Providenciales, TCI, BWI', area: 'na', date: 'November 2015', status: 'Complete', img : ''},
                     10: { active: false, project: 'Drake Developments - Villa Development', client: 'DRAKE Development', location: 'Leeward, Providenciales, TCI, BWI', area: '5,400 sf', date: 'February 2021', status: 'Complete', img : ''},
+                    11: { active: false, project: 'BLUE Tang Developments - Villa & Guest House Development', client: 'TREXLER Residence', location: 'Leeward, Providenciales, TCI, BWI', area: '-', date: '-',status: 'On-going', img: ''},
+                    12: { active: false, project: 'Triton Estates - Guest Viilas (4no) + Staff Housing', client: 'TRITON Estates', location: 'Long Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'On-going', img: ''},
+                    13: { active: false, project: 'Karaya Blue 6 - Villa Development (6 Plots)', client: 'KARAYA BLUE', location: '', area: '-', date: '-',status: '', img: ''},
+                    14: { active: false, project: 'Karaya Blue 5 - Villa Development (6 Plots)', client: 'KARAYA BLUE', location: '', area: '-', date: '-',status: '', img: ''},
+                    15: { active: false, project: 'Karaya Blue 4 - Villa Development (6 Plots)', client: 'KARAYA BLUE', location: 'Long Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'On-going', img: ''},
+                    16: { active: false, project: 'Windermere Villa - Villa & Swimming Pool Refurbishment ', client: 'WINDERMERE Residence', location: 'Leeward, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    17: { active: false, project: 'KB Home - Warehouse / Lean-to-Roof Extension', client: 'KB Home ', location: 'Five Cays, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    18: { active: false, project: 'Turtle Breeze - Refurbishment & Extension of Existing Villa', client: 'TURTLE BREEZE', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    19: { active: false, project: 'Triton Estates - Sports Pavilion, Padel & Tennis Courts', client: 'TRITON Estates', location: 'Long Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'On-going', img: ''},
+                    20: { active: false, project: 'Adam & Eve Villa - Refurbishment of Existing Villa', client: 'ADAM & EVE Villa', location: 'Leeward, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    21: { active: false, project: 'Sublime Villa - Internal & External Refurbishment Works', client: 'SUBLIME - Chalk Sound', location: 'Silly Creek, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    22: { active: false, project: 'Vieux Caribe - Internal & External Refurbishment Works', client: 'VIEUX CARIBE - Chalk Sound', location: 'Chalk Sound, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    23: { active: false, project: 'Triton Estates - Maintenance Term Contract - Main Villa', client: 'TRITON Estates', location: 'Long Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'On-going', img: ''},
+                    24: { active: false, project: 'Villa Capri - Refurbishment & Extension of Existing Villa', client: 'VILLA CAPRI ', location: 'Chalk Sound, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    25: { active: false, project: 'Constantine Residence - Refurbishment of Existing Villa', client: 'CONSTANTINE Residence', location: 'Silly Creek, Providenciales, TCI, BWI', area: '-', date: '-',status: 'On-going', img: ''},
+                    26: { active: false, project: 'Grace Bay Village Estates - Design & Masterplan', client: 'Grace Bay Village Estates', location: 'Grace Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'On-going', img: ''},
+                    27: { active: false, project: 'The Dunes - Pool Renovation & Hot Tub Installation', client: 'The Dunes Hot Tub', location: 'Turtle Cove, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    28: { active: false, project: 'Scott Residence - Kitchen Refurbishment', client: 'SCOTT Residence', location: 'Discovery Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    29: { active: false, project: 'Sterling Residence - Refurbishment of Existing Villa', client: 'Sterling Residence', location: 'Chalk Sound, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    30: { active: false, project: 'Ocean Club West - Boardwalk Renewal & Restoration', client: 'Ocean Club West', location: 'Grace Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    31: { active: false, project: 'Romkey Residence - Main Villa (Shell & Core)', client: 'Romkey Residence', location: 'Leeward, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+                    32: { active: false, project: 'Venture House - Commercial Office Development', client: 'VENTURE House', location: 'Grace Bay, Providenciales, TCI, BWI', area: '-', date: '-',status: 'Complete', img: ''},
+
                 }
             }
         }
