@@ -124,4 +124,7 @@ a.kv-link-dark {
 a.kv-link-dark:hover {
     color: #fe6600;
 }
-
+a.kv-link-tel {
+    color: #ffffff;
+    text-decoration: none;
+}
