@@ -128,3 +128,9 @@ a.kv-link-tel {
     color: #ffffff;
     text-decoration: none;
 }
+
+
+/* Width */
+.kv-width-max {
+    width: 100%;
+}
