@@ -11,7 +11,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
-    transition: 0.7s!important;
+    transition: 2s!important;
 }
 .kv-bg-pan-hover:hover {
     background-position: right;
@@ -108,6 +108,47 @@
 .kv-vh-85max {max-height: 85vh!important;}
 
 .kv-vh-inherit {min-height: inherit!important;}
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+.kv-vh {
+    height: 60vh!important;
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    .kv-vh-sm {
+        height: 60vh!important;
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    .kv-vh-md {
+        height: 60vh!important;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .kv-vh-lg {
+        height: 60vh!important;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .kv-vh-xl {
+        height: 50vh!important;
+    }
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .kv-vh-xxl {
+        height: 35vh!important;
+    }
+}
 
 /* Links */
 a.kv-link {
