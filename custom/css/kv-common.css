@@ -112,34 +112,34 @@
 /* X-Small devices (portrait phones, less than 576px) */
 /* No media query for `xs` since this is the default in Bootstrap */
 .kv-vh {
-    height: 60vh!important;
+    height: 35vh!important;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
     .kv-vh-sm {
-        height: 60vh!important;
+        height: 35vh!important;
     }
 }
 
 /* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
     .kv-vh-md {
-        height: 60vh!important;
+        height: 35vh!important;
     }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
     .kv-vh-lg {
-        height: 60vh!important;
+        height: 35vh!important;
     }
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
     .kv-vh-xl {
-        height: 50vh!important;
+        height: 35vh!important;
     }
 }
 

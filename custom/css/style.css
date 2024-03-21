@@ -165,7 +165,7 @@
     background-position: center
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     .image-container {
         background-position: center;
         background-repeat: no-repeat;
