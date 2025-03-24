@@ -53,6 +53,11 @@
     font-weight: 300;
     font-style: normal;
 }
+.kv-font-vibes {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
 /* HEADER */
 .navbar-toggler-icon-dark {
